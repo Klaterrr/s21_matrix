@@ -1,0 +1,214 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="group__matrix__core" kind="group">
+    <compoundname>matrix_core</compoundname>
+    <title>Основные функции</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int s21_create_matrix</definition>
+        <argsstring>(int rows, int columns, matrix_t *result)</argsstring>
+        <name>s21_create_matrix</name>
+        <param>
+          <type>int</type>
+          <declname>rows</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>columns</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Создает матрицу заданного размера. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">rows</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество строк (должно быть &gt; 0). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">columns</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Количество столбцов (должно быть &gt; 0). </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на структуру, куда будет сохранена созданная матрица. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>OK (0) в случае успеха, иначе INCORRECT_MATRIX (1). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="75" column="5" bodyfile="src/s21_matrix.c" bodystart="208" bodyend="231" declfile="src/s21_matrix.h" declline="75" declcolumn="5"/>
+        <references refid="s21__matrix_8c_1ae01bee57f55876771f6d1c7f74d43854" compoundref="s21__matrix_8c" startline="22" endline="35">allocate_matrix_rows</references>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" compoundref="s21__matrix_8h" startline="41">INCORRECT_MATRIX</references>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <referencedby refid="s21__matrix_8c_1a2c36041738ad182088945fcd15eca832" compoundref="s21__matrix_8c" startline="116" endline="142">populate_complements_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" compoundref="s21__matrix_8c" startline="400" endline="418">s21_calc_complements</referencedby>
+        <referencedby refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" compoundref="s21__matrix_8c" startline="328" endline="348">s21_mult_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" compoundref="s21__matrix_8c" startline="310" endline="326">s21_mult_number</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" compoundref="s21__matrix_8c" startline="290" endline="308">s21_sub_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" compoundref="s21__matrix_8c" startline="270" endline="288">s21_sum_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" compoundref="s21__matrix_8c" startline="351" endline="367">s21_transpose</referencedby>
+        <referencedby refid="group__test__algebra_1ga6a4345b2f398a35347dce29c7a2fc196" compoundref="s21__matrix__test_8c" startline="413" endline="433">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga64dd27616e469f0adb0203f22b3ba400" compoundref="s21__matrix__test_8c" startline="440" endline="447">START_TEST</referencedby>
+        <referencedby refid="group__test__create_1ga461920efadcd08fa06c5b1c8f6ceab97" compoundref="s21__matrix__test_8c" startline="56" endline="64">START_TEST</referencedby>
+        <referencedby refid="group__test__create_1ga2d73ee9313e06a760f15d562c7ae7e88" compoundref="s21__matrix__test_8c" startline="71" endline="75">START_TEST</referencedby>
+        <referencedby refid="group__test__create_1gac18a3d69367e43ebac8337ca0c5021c5" compoundref="s21__matrix__test_8c" startline="82" endline="86">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga9930b15454a568a00deaede8e4508dd4" compoundref="s21__matrix__test_8c" startline="362" endline="374">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1gab809790279b8eea5d5519fa914bdbf02" compoundref="s21__matrix__test_8c" startline="381" endline="392">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga244c0c28bb0c73265b1978bb042c265a" compoundref="s21__matrix__test_8c" startline="399" endline="406">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gabd1295f4c93b55ca9d2ab0d681c02dca" compoundref="s21__matrix__test_8c" startline="97" endline="111">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1ga720f3aae3f5c7d21885178d84824e734" compoundref="s21__matrix__test_8c" startline="118" endline="133">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gac581d0bfbced93258a253713b234ce9b" compoundref="s21__matrix__test_8c" startline="140" endline="148">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gab960552203f46d106eab78405391802a" compoundref="s21__matrix__test_8c" startline="155" endline="167">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1gacaa95eb0298ad8ce3b31e8e9f9c36891" compoundref="s21__matrix__test_8c" startline="454" endline="474">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga7affc7d4587a65c19f76e3a825fd2671" compoundref="s21__matrix__test_8c" startline="481" endline="492">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" compoundref="s21__matrix__test_8c" startline="282" endline="305">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1ga4a8853be0f5d3d18553a3b15eb47ffd9" compoundref="s21__matrix__test_8c" startline="312" endline="322">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1gad56b68d6f5c9d91d554b178a91decb83" compoundref="s21__matrix__test_8c" startline="257" endline="275">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gaa1d3fd550be47b9d6d49e5a8db5c8242" compoundref="s21__matrix__test_8c" startline="224" endline="246">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gae05c542b3d9f1a8dba5f04f020f0cea4" compoundref="s21__matrix__test_8c" startline="178" endline="200">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1ga31fc0a16da9934801764380f93eaad6e" compoundref="s21__matrix__test_8c" startline="207" endline="217">START_TEST</referencedby>
+        <referencedby refid="group__test__transform_1ga712612c2fbbfb668ff089bc55ffe059d" compoundref="s21__matrix__test_8c" startline="333" endline="351">START_TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void s21_remove_matrix</definition>
+        <argsstring>(matrix_t *A)</argsstring>
+        <name>s21_remove_matrix</name>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+<para>Освобождает память, выделенную под матрицу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Безопасно обрабатывает NULL указатели. После выполнения обнуляет поля структуры. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="inout">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на матрицу для удаления. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="83" column="6" bodyfile="src/s21_matrix.c" bodystart="233" bodyend="243" declfile="src/s21_matrix.h" declline="83" declcolumn="6"/>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <referencedby refid="s21__matrix_8c_1ae01bee57f55876771f6d1c7f74d43854" compoundref="s21__matrix_8c" startline="22" endline="35">allocate_matrix_rows</referencedby>
+        <referencedby refid="s21__matrix_8c_1a96a189c4d33a3082ff66f8e0ca67531d" compoundref="s21__matrix_8c" startline="154" endline="179">perform_inverse_calculation</referencedby>
+        <referencedby refid="s21__matrix_8c_1a2c36041738ad182088945fcd15eca832" compoundref="s21__matrix_8c" startline="116" endline="142">populate_complements_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</referencedby>
+        <referencedby refid="group__test__algebra_1ga6a4345b2f398a35347dce29c7a2fc196" compoundref="s21__matrix__test_8c" startline="413" endline="433">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga64dd27616e469f0adb0203f22b3ba400" compoundref="s21__matrix__test_8c" startline="440" endline="447">START_TEST</referencedby>
+        <referencedby refid="group__test__create_1ga461920efadcd08fa06c5b1c8f6ceab97" compoundref="s21__matrix__test_8c" startline="56" endline="64">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga9930b15454a568a00deaede8e4508dd4" compoundref="s21__matrix__test_8c" startline="362" endline="374">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1gab809790279b8eea5d5519fa914bdbf02" compoundref="s21__matrix__test_8c" startline="381" endline="392">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga244c0c28bb0c73265b1978bb042c265a" compoundref="s21__matrix__test_8c" startline="399" endline="406">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gabd1295f4c93b55ca9d2ab0d681c02dca" compoundref="s21__matrix__test_8c" startline="97" endline="111">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1ga720f3aae3f5c7d21885178d84824e734" compoundref="s21__matrix__test_8c" startline="118" endline="133">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gac581d0bfbced93258a253713b234ce9b" compoundref="s21__matrix__test_8c" startline="140" endline="148">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gab960552203f46d106eab78405391802a" compoundref="s21__matrix__test_8c" startline="155" endline="167">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1gacaa95eb0298ad8ce3b31e8e9f9c36891" compoundref="s21__matrix__test_8c" startline="454" endline="474">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga7affc7d4587a65c19f76e3a825fd2671" compoundref="s21__matrix__test_8c" startline="481" endline="492">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" compoundref="s21__matrix__test_8c" startline="282" endline="305">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1ga4a8853be0f5d3d18553a3b15eb47ffd9" compoundref="s21__matrix__test_8c" startline="312" endline="322">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1gad56b68d6f5c9d91d554b178a91decb83" compoundref="s21__matrix__test_8c" startline="257" endline="275">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gaa1d3fd550be47b9d6d49e5a8db5c8242" compoundref="s21__matrix__test_8c" startline="224" endline="246">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gae05c542b3d9f1a8dba5f04f020f0cea4" compoundref="s21__matrix__test_8c" startline="178" endline="200">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1ga31fc0a16da9934801764380f93eaad6e" compoundref="s21__matrix__test_8c" startline="207" endline="217">START_TEST</referencedby>
+        <referencedby refid="group__test__transform_1ga712612c2fbbfb668ff089bc55ffe059d" compoundref="s21__matrix__test_8c" startline="333" endline="351">START_TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int s21_eq_matrix</definition>
+        <argsstring>(matrix_t *A, matrix_t *B)</argsstring>
+        <name>s21_eq_matrix</name>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+<para>Сравнивает две матрицы на идентичность с точностью до S21_EPS. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на первую матрицу. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на вторую матрицу. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>SUCCESS (1) если матрицы равны, иначе FAILURE (0). </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="92" column="5" bodyfile="src/s21_matrix.c" bodystart="245" bodyend="268" declfile="src/s21_matrix.h" declline="92" declcolumn="5"/>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</references>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <referencedby refid="group__test__algebra_1ga6a4345b2f398a35347dce29c7a2fc196" compoundref="s21__matrix__test_8c" startline="413" endline="433">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gabd1295f4c93b55ca9d2ab0d681c02dca" compoundref="s21__matrix__test_8c" startline="97" endline="111">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1ga720f3aae3f5c7d21885178d84824e734" compoundref="s21__matrix__test_8c" startline="118" endline="133">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gac581d0bfbced93258a253713b234ce9b" compoundref="s21__matrix__test_8c" startline="140" endline="148">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gab960552203f46d106eab78405391802a" compoundref="s21__matrix__test_8c" startline="155" endline="167">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1gacaa95eb0298ad8ce3b31e8e9f9c36891" compoundref="s21__matrix__test_8c" startline="454" endline="474">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" compoundref="s21__matrix__test_8c" startline="282" endline="305">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1gad56b68d6f5c9d91d554b178a91decb83" compoundref="s21__matrix__test_8c" startline="257" endline="275">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gaa1d3fd550be47b9d6d49e5a8db5c8242" compoundref="s21__matrix__test_8c" startline="224" endline="246">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gae05c542b3d9f1a8dba5f04f020f0cea4" compoundref="s21__matrix__test_8c" startline="178" endline="200">START_TEST</referencedby>
+        <referencedby refid="group__test__transform_1ga712612c2fbbfb668ff089bc55ffe059d" compoundref="s21__matrix__test_8c" startline="333" endline="351">START_TEST</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Функции для создания, удаления и сравнения матриц. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="s21__matrix_8h" kind="file" language="C++">
+    <compoundname>s21_matrix.h</compoundname>
+    <includes local="no">math.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes local="no">stddef.h</includes>
+    <includedby refid="s21__matrix_8c" local="yes">src/s21_matrix.c</includedby>
+    <includedby refid="s21__matrix__test_8c" local="yes">src/tests/s21_matrix_test.c</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>src/s21_matrix.h</label>
+        <link refid="s21__matrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>math.h</label>
+      </node>
+      <node id="5">
+        <label>stddef.h</label>
+      </node>
+      <node id="3">
+        <label>stdio.h</label>
+      </node>
+      <node id="4">
+        <label>stdlib.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>src/s21_matrix.c</label>
+        <link refid="s21__matrix_8c"/>
+      </node>
+      <node id="1">
+        <label>src/s21_matrix.h</label>
+        <link refid="s21__matrix_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>src/tests/s21_matrix_test.c</label>
+        <link refid="s21__matrix__test_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmatrix__struct" prot="public">matrix_struct</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="s21__matrix_8h_1aa90cac659d18e8ef6294c7ae337f6b58" prot="public" static="no">
+        <name>SUCCESS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="22" column="9" bodyfile="src/s21_matrix.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="s21__matrix_8h_1a6d58f9ac447476b4e084d7ca383f5183" prot="public" static="no">
+        <name>FAILURE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="23" column="9" bodyfile="src/s21_matrix.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="s21__matrix_8h_1a58d1c47e6c51ff35afaac4404acef44c" prot="public" static="no">
+        <name>S21_EPS</name>
+        <initializer>1e-7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="25" column="9" bodyfile="src/s21_matrix.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0" prot="public" static="no" strong="no">
+        <type></type>
+        <name>result_code_t</name>
+        <enumvalue id="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" prot="public">
+          <name>OK</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>0 - Успешное выполнение </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" prot="public">
+          <name>INCORRECT_MATRIX</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>1 - Ошибка, некорректная матрица </para>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" prot="public">
+          <name>CALCULATION_ERROR</name>
+          <initializer>= 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+<para>2 - Ошибка вычисления </para>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Перечисление кодов возврата для функций библиотеки. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="39" column="1" bodyfile="src/s21_matrix.h" bodystart="39" bodyend="43"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" prot="public" static="no">
+        <type>struct <ref refid="structmatrix__struct" kindref="compound">matrix_struct</ref></type>
+        <definition>typedef struct matrix_struct matrix_t</definition>
+        <argsstring></argsstring>
+        <name>matrix_t</name>
+        <briefdescription>
+<para>Структура для представления матрицы. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="34" column="10"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <member refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" kind="function"><name>s21_create_matrix</name></member>
+      <member refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" kind="function"><name>s21_remove_matrix</name></member>
+      <member refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" kind="function"><name>s21_eq_matrix</name></member>
+      <member refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" kind="function"><name>s21_sum_matrix</name></member>
+      <member refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" kind="function"><name>s21_sub_matrix</name></member>
+      <member refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" kind="function"><name>s21_mult_number</name></member>
+      <member refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" kind="function"><name>s21_mult_matrix</name></member>
+      <member refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" kind="function"><name>s21_transpose</name></member>
+      <member refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" kind="function"><name>s21_determinant</name></member>
+      <member refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" kind="function"><name>s21_calc_complements</name></member>
+      <member refid="group__matrix__algebra_1gacf36c0578df2e0b3a9e63fc8ad3b3276" kind="function"><name>s21_inverse_matrix</name></member>
+    </sectiondef>
+    <briefdescription>
+<para>Заголовочный файл для библиотеки работы с матрицами. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Johan Kamiyama (a.k.a @kuretaru or shanaecl)</para>
+</simplesect>
+Содержит объявление структуры <ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> и прототипы всех публичных функций для создания, удаления, сравнения матриц, а также для выполнения арифметических и алгебраических операций. <simplesect kind="version"><para>1.0 </para>
+</simplesect>
+<simplesect kind="date"><para>2025-06-30 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>S21_MATRIX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S21_MATRIX_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;math.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---<sp/>Макросы<sp/>и<sp/>перечисления<sp/>---</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUCCESS<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FAILURE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>S21_EPS<sp/>1e-7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="structmatrix__struct" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmatrix__struct" kindref="compound">matrix_struct</ref><sp/>{</highlight></codeline>
+<codeline lineno="31" refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>**<ref refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" kindref="member">matrix</ref>;<sp/></highlight></codeline>
+<codeline lineno="32" refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" kindref="member">rows</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33" refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" kindref="member">columns</ref>;<sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="34" refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" refkind="member"><highlight class="normal">}<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="40" refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" kindref="member">OK</ref><sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41" refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" kindref="member">INCORRECT_MATRIX</ref><sp/>=<sp/>1,<sp/><sp/></highlight></codeline>
+<codeline lineno="42" refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" kindref="member">CALCULATION_ERROR</ref><sp/>=<sp/>2,<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal">}<sp/><ref refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0" kindref="member">result_code_t</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Группировка<sp/>функций<sp/>для<sp/>удобной<sp/>навигации<sp/>в<sp/>Doxygen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=================================================================================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//<sp/>---<sp/>Основные<sp/>функции<sp/>API<sp/>---</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" kindref="member">s21_create_matrix</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>rows,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>columns,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" kindref="member">s21_remove_matrix</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" kindref="member">s21_eq_matrix</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*B);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" kindref="member">s21_sum_matrix</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*B,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" kindref="member">s21_sub_matrix</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*B,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" kindref="member">s21_mult_number</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>number,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" kindref="member">s21_mult_matrix</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*B,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" kindref="member">s21_transpose</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" kindref="member">s21_determinant</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*result);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" kindref="member">s21_calc_complements</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="group__matrix__algebra_1gacf36c0578df2e0b3a9e63fc8ad3b3276" kindref="member">s21_inverse_matrix</ref>(<ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*A,<sp/><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref><sp/>*result);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">//<sp/>S21_MATRIX_H_</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="src/s21_matrix.h"/>
+  </compounddef>
+</doxygen>

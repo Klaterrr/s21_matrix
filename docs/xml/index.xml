@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.14.0" xml:lang="ru">
+  <compound refid="structmatrix__struct" kind="struct"><name>matrix_struct</name>
+    <member refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" kind="variable"><name>matrix</name></member>
+    <member refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" kind="variable"><name>rows</name></member>
+    <member refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" kind="variable"><name>columns</name></member>
+  </compound>
+  <compound refid="s21__matrix_8c" kind="file"><name>s21_matrix.c</name>
+    <member refid="s21__matrix_8c_1a2c36041738ad182088945fcd15eca832" kind="function"><name>populate_complements_matrix</name></member>
+    <member refid="s21__matrix_8c_1ae9d2106673240ba90364150a17349e70" kind="function"><name>perform_multiplication</name></member>
+    <member refid="s21__matrix_8c_1ae01bee57f55876771f6d1c7f74d43854" kind="function"><name>allocate_matrix_rows</name></member>
+    <member refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" kind="function"><name>is_matrix_valid</name></member>
+    <member refid="s21__matrix_8c_1ad0f646f72453f127ab099735d14377c0" kind="function"><name>get_minor_matrix</name></member>
+    <member refid="s21__matrix_8c_1a4d867d79fab5221c0825b4ef15c8d99c" kind="function"><name>perform_transposition</name></member>
+    <member refid="s21__matrix_8c_1a96a189c4d33a3082ff66f8e0ca67531d" kind="function"><name>perform_inverse_calculation</name></member>
+    <member refid="s21__matrix_8c_1a278f477f030859aab9f7f86b1de2e41a" kind="function"><name>perform_sum</name></member>
+    <member refid="s21__matrix_8c_1a2bab9a3e4d06c787f4cfd1d9aa0a0bad" kind="function"><name>perform_sub</name></member>
+    <member refid="s21__matrix_8c_1a48a2f51b47433dc5f2741b87da639394" kind="function"><name>perform_mult_number</name></member>
+    <member refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" kind="function"><name>s21_create_matrix</name></member>
+    <member refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" kind="function"><name>s21_remove_matrix</name></member>
+    <member refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" kind="function"><name>s21_eq_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" kind="function"><name>s21_sum_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" kind="function"><name>s21_sub_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" kind="function"><name>s21_mult_number</name></member>
+    <member refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" kind="function"><name>s21_mult_matrix</name></member>
+    <member refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" kind="function"><name>s21_transpose</name></member>
+    <member refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" kind="function"><name>s21_determinant</name></member>
+    <member refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" kind="function"><name>s21_calc_complements</name></member>
+    <member refid="group__matrix__algebra_1gacf36c0578df2e0b3a9e63fc8ad3b3276" kind="function"><name>s21_inverse_matrix</name></member>
+  </compound>
+  <compound refid="s21__matrix_8h" kind="file"><name>s21_matrix.h</name>
+    <member refid="s21__matrix_8h_1aa90cac659d18e8ef6294c7ae337f6b58" kind="define"><name>SUCCESS</name></member>
+    <member refid="s21__matrix_8h_1a6d58f9ac447476b4e084d7ca383f5183" kind="define"><name>FAILURE</name></member>
+    <member refid="s21__matrix_8h_1a58d1c47e6c51ff35afaac4404acef44c" kind="define"><name>S21_EPS</name></member>
+    <member refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0" kind="enum"><name>result_code_t</name></member>
+    <member refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" kind="enumvalue"><name>OK</name></member>
+    <member refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" kind="enumvalue"><name>INCORRECT_MATRIX</name></member>
+    <member refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" kind="enumvalue"><name>CALCULATION_ERROR</name></member>
+    <member refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kind="typedef"><name>matrix_t</name></member>
+    <member refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" kind="function"><name>s21_create_matrix</name></member>
+    <member refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" kind="function"><name>s21_remove_matrix</name></member>
+    <member refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" kind="function"><name>s21_eq_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" kind="function"><name>s21_sum_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" kind="function"><name>s21_sub_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" kind="function"><name>s21_mult_number</name></member>
+    <member refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" kind="function"><name>s21_mult_matrix</name></member>
+    <member refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" kind="function"><name>s21_transpose</name></member>
+    <member refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" kind="function"><name>s21_determinant</name></member>
+    <member refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" kind="function"><name>s21_calc_complements</name></member>
+    <member refid="group__matrix__algebra_1gacf36c0578df2e0b3a9e63fc8ad3b3276" kind="function"><name>s21_inverse_matrix</name></member>
+  </compound>
+  <compound refid="s21__matrix__test_8c" kind="file"><name>s21_matrix_test.c</name>
+    <member refid="group__test__create_1ga461920efadcd08fa06c5b1c8f6ceab97" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__create_1ga2d73ee9313e06a760f15d562c7ae7e88" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__create_1gac18a3d69367e43ebac8337ca0c5021c5" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__eq_1gabd1295f4c93b55ca9d2ab0d681c02dca" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__eq_1ga720f3aae3f5c7d21885178d84824e734" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__eq_1gac581d0bfbced93258a253713b234ce9b" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__eq_1gab960552203f46d106eab78405391802a" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__sum__sub_1gae05c542b3d9f1a8dba5f04f020f0cea4" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__sum__sub_1ga31fc0a16da9934801764380f93eaad6e" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__sum__sub_1gaa1d3fd550be47b9d6d49e5a8db5c8242" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__mult_1gad56b68d6f5c9d91d554b178a91decb83" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__mult_1ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__mult_1ga4a8853be0f5d3d18553a3b15eb47ffd9" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__transform_1ga712612c2fbbfb668ff089bc55ffe059d" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga9930b15454a568a00deaede8e4508dd4" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1gab809790279b8eea5d5519fa914bdbf02" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga244c0c28bb0c73265b1978bb042c265a" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga6a4345b2f398a35347dce29c7a2fc196" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga64dd27616e469f0adb0203f22b3ba400" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1gacaa95eb0298ad8ce3b31e8e9f9c36891" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga7affc7d4587a65c19f76e3a825fd2671" kind="function"><name>START_TEST</name></member>
+    <member refid="s21__matrix__test_8c_1a77675d734cd98f00f957a31bd8a3d86b" kind="function"><name>s21_matrix_suite</name></member>
+    <member refid="s21__matrix__test_8c_1a840291bc02cba5474a4cb46a9b9566fe" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="group__matrix__core" kind="group"><name>matrix_core</name>
+    <member refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" kind="function"><name>s21_create_matrix</name></member>
+    <member refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" kind="function"><name>s21_remove_matrix</name></member>
+    <member refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" kind="function"><name>s21_eq_matrix</name></member>
+  </compound>
+  <compound refid="group__matrix__arithmetic" kind="group"><name>matrix_arithmetic</name>
+    <member refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" kind="function"><name>s21_sum_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" kind="function"><name>s21_sub_matrix</name></member>
+    <member refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" kind="function"><name>s21_mult_number</name></member>
+    <member refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" kind="function"><name>s21_mult_matrix</name></member>
+  </compound>
+  <compound refid="group__matrix__algebra" kind="group"><name>matrix_algebra</name>
+    <member refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" kind="function"><name>s21_transpose</name></member>
+    <member refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" kind="function"><name>s21_determinant</name></member>
+    <member refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" kind="function"><name>s21_calc_complements</name></member>
+    <member refid="group__matrix__algebra_1gacf36c0578df2e0b3a9e63fc8ad3b3276" kind="function"><name>s21_inverse_matrix</name></member>
+  </compound>
+  <compound refid="group__unit__tests" kind="group"><name>unit_tests</name>
+  </compound>
+  <compound refid="group__test__create" kind="group"><name>test_create</name>
+    <member refid="group__test__create_1ga461920efadcd08fa06c5b1c8f6ceab97" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__create_1ga2d73ee9313e06a760f15d562c7ae7e88" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__create_1gac18a3d69367e43ebac8337ca0c5021c5" kind="function"><name>START_TEST</name></member>
+  </compound>
+  <compound refid="group__test__eq" kind="group"><name>test_eq</name>
+    <member refid="group__test__eq_1gabd1295f4c93b55ca9d2ab0d681c02dca" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__eq_1ga720f3aae3f5c7d21885178d84824e734" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__eq_1gac581d0bfbced93258a253713b234ce9b" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__eq_1gab960552203f46d106eab78405391802a" kind="function"><name>START_TEST</name></member>
+  </compound>
+  <compound refid="group__test__sum__sub" kind="group"><name>test_sum_sub</name>
+    <member refid="group__test__sum__sub_1gae05c542b3d9f1a8dba5f04f020f0cea4" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__sum__sub_1ga31fc0a16da9934801764380f93eaad6e" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__sum__sub_1gaa1d3fd550be47b9d6d49e5a8db5c8242" kind="function"><name>START_TEST</name></member>
+  </compound>
+  <compound refid="group__test__mult" kind="group"><name>test_mult</name>
+    <member refid="group__test__mult_1gad56b68d6f5c9d91d554b178a91decb83" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__mult_1ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__mult_1ga4a8853be0f5d3d18553a3b15eb47ffd9" kind="function"><name>START_TEST</name></member>
+  </compound>
+  <compound refid="group__test__transform" kind="group"><name>test_transform</name>
+    <member refid="group__test__transform_1ga712612c2fbbfb668ff089bc55ffe059d" kind="function"><name>START_TEST</name></member>
+  </compound>
+  <compound refid="group__test__algebra" kind="group"><name>test_algebra</name>
+    <member refid="group__test__algebra_1ga9930b15454a568a00deaede8e4508dd4" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1gab809790279b8eea5d5519fa914bdbf02" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga244c0c28bb0c73265b1978bb042c265a" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga6a4345b2f398a35347dce29c7a2fc196" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga64dd27616e469f0adb0203f22b3ba400" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1gacaa95eb0298ad8ce3b31e8e9f9c36891" kind="function"><name>START_TEST</name></member>
+    <member refid="group__test__algebra_1ga7affc7d4587a65c19f76e3a825fd2671" kind="function"><name>START_TEST</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_d93a1d4020dea85bb71b237545b5e722" kind="dir"><name>src/tests</name>
+  </compound>
+</doxygenindex>

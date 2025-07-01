@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="group__test__transform" kind="group">
+    <compoundname>test_transform</compoundname>
+    <title>Тесты трансформаций матриц</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__test__transform_1ga712612c2fbbfb668ff089bc55ffe059d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_transpose_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_transpose_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка успешного транспонирования матрицы. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="333" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="333" bodyend="351"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+        <references refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" compoundref="s21__matrix_8c" startline="351" endline="367">s21_transpose</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="structmatrix__struct" kind="struct" language="C++" prot="public">
+    <compoundname>matrix_struct</compoundname>
+    <includes refid="s21__matrix_8h" local="no">s21_matrix.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" prot="public" static="no" mutable="no">
+        <type>double **</type>
+        <definition>double** matrix_struct::matrix</definition>
+        <argsstring></argsstring>
+        <name>matrix</name>
+        <qualifiedname>matrix_struct::matrix</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Указатель на двумерный массив элементов матрицы. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="31" column="10" bodyfile="src/s21_matrix.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="s21__matrix_8c_1ae01bee57f55876771f6d1c7f74d43854" compoundref="s21__matrix_8c" startline="22" endline="35">allocate_matrix_rows</referencedby>
+        <referencedby refid="s21__matrix_8c_1ad0f646f72453f127ab099735d14377c0" compoundref="s21__matrix_8c" startline="55" endline="68">get_minor_matrix</referencedby>
+        <referencedby refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</referencedby>
+        <referencedby refid="s21__matrix_8c_1ae9d2106673240ba90364150a17349e70" compoundref="s21__matrix_8c" startline="79" endline="89">perform_multiplication</referencedby>
+        <referencedby refid="s21__matrix_8c_1a4d867d79fab5221c0825b4ef15c8d99c" compoundref="s21__matrix_8c" startline="98" endline="104">perform_transposition</referencedby>
+        <referencedby refid="s21__matrix_8c_1a2c36041738ad182088945fcd15eca832" compoundref="s21__matrix_8c" startline="116" endline="142">populate_complements_matrix</referencedby>
+        <referencedby refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</referencedby>
+        <referencedby refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</referencedby>
+        <referencedby refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</referencedby>
+        <referencedby refid="group__test__algebra_1ga6a4345b2f398a35347dce29c7a2fc196" compoundref="s21__matrix__test_8c" startline="413" endline="433">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga9930b15454a568a00deaede8e4508dd4" compoundref="s21__matrix__test_8c" startline="362" endline="374">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1gab809790279b8eea5d5519fa914bdbf02" compoundref="s21__matrix__test_8c" startline="381" endline="392">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gabd1295f4c93b55ca9d2ab0d681c02dca" compoundref="s21__matrix__test_8c" startline="97" endline="111">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1ga720f3aae3f5c7d21885178d84824e734" compoundref="s21__matrix__test_8c" startline="118" endline="133">START_TEST</referencedby>
+        <referencedby refid="group__test__eq_1gab960552203f46d106eab78405391802a" compoundref="s21__matrix__test_8c" startline="155" endline="167">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1gacaa95eb0298ad8ce3b31e8e9f9c36891" compoundref="s21__matrix__test_8c" startline="454" endline="474">START_TEST</referencedby>
+        <referencedby refid="group__test__algebra_1ga7affc7d4587a65c19f76e3a825fd2671" compoundref="s21__matrix__test_8c" startline="481" endline="492">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" compoundref="s21__matrix__test_8c" startline="282" endline="305">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1gad56b68d6f5c9d91d554b178a91decb83" compoundref="s21__matrix__test_8c" startline="257" endline="275">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gaa1d3fd550be47b9d6d49e5a8db5c8242" compoundref="s21__matrix__test_8c" startline="224" endline="246">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1gae05c542b3d9f1a8dba5f04f020f0cea4" compoundref="s21__matrix__test_8c" startline="178" endline="200">START_TEST</referencedby>
+        <referencedby refid="group__test__transform_1ga712612c2fbbfb668ff089bc55ffe059d" compoundref="s21__matrix__test_8c" startline="333" endline="351">START_TEST</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int matrix_struct::rows</definition>
+        <argsstring></argsstring>
+        <name>rows</name>
+        <qualifiedname>matrix_struct::rows</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Количество строк. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="32" column="7" bodyfile="src/s21_matrix.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="s21__matrix_8c_1ae01bee57f55876771f6d1c7f74d43854" compoundref="s21__matrix_8c" startline="22" endline="35">allocate_matrix_rows</referencedby>
+        <referencedby refid="s21__matrix_8c_1ad0f646f72453f127ab099735d14377c0" compoundref="s21__matrix_8c" startline="55" endline="68">get_minor_matrix</referencedby>
+        <referencedby refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</referencedby>
+        <referencedby refid="s21__matrix_8c_1ae9d2106673240ba90364150a17349e70" compoundref="s21__matrix_8c" startline="79" endline="89">perform_multiplication</referencedby>
+        <referencedby refid="s21__matrix_8c_1a4d867d79fab5221c0825b4ef15c8d99c" compoundref="s21__matrix_8c" startline="98" endline="104">perform_transposition</referencedby>
+        <referencedby refid="s21__matrix_8c_1a2c36041738ad182088945fcd15eca832" compoundref="s21__matrix_8c" startline="116" endline="142">populate_complements_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" compoundref="s21__matrix_8c" startline="400" endline="418">s21_calc_complements</referencedby>
+        <referencedby refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</referencedby>
+        <referencedby refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" compoundref="s21__matrix_8c" startline="328" endline="348">s21_mult_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" compoundref="s21__matrix_8c" startline="310" endline="326">s21_mult_number</referencedby>
+        <referencedby refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" compoundref="s21__matrix_8c" startline="290" endline="308">s21_sub_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" compoundref="s21__matrix_8c" startline="270" endline="288">s21_sum_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" compoundref="s21__matrix_8c" startline="351" endline="367">s21_transpose</referencedby>
+        <referencedby refid="group__test__create_1ga461920efadcd08fa06c5b1c8f6ceab97" compoundref="s21__matrix__test_8c" startline="56" endline="64">START_TEST</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int matrix_struct::columns</definition>
+        <argsstring></argsstring>
+        <name>columns</name>
+        <qualifiedname>matrix_struct::columns</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Количество столбцов. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="33" column="7" bodyfile="src/s21_matrix.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="s21__matrix_8c_1ae01bee57f55876771f6d1c7f74d43854" compoundref="s21__matrix_8c" startline="22" endline="35">allocate_matrix_rows</referencedby>
+        <referencedby refid="s21__matrix_8c_1ad0f646f72453f127ab099735d14377c0" compoundref="s21__matrix_8c" startline="55" endline="68">get_minor_matrix</referencedby>
+        <referencedby refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</referencedby>
+        <referencedby refid="s21__matrix_8c_1ae9d2106673240ba90364150a17349e70" compoundref="s21__matrix_8c" startline="79" endline="89">perform_multiplication</referencedby>
+        <referencedby refid="s21__matrix_8c_1a4d867d79fab5221c0825b4ef15c8d99c" compoundref="s21__matrix_8c" startline="98" endline="104">perform_transposition</referencedby>
+        <referencedby refid="s21__matrix_8c_1a2c36041738ad182088945fcd15eca832" compoundref="s21__matrix_8c" startline="116" endline="142">populate_complements_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" compoundref="s21__matrix_8c" startline="400" endline="418">s21_calc_complements</referencedby>
+        <referencedby refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</referencedby>
+        <referencedby refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" compoundref="s21__matrix_8c" startline="328" endline="348">s21_mult_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" compoundref="s21__matrix_8c" startline="310" endline="326">s21_mult_number</referencedby>
+        <referencedby refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" compoundref="s21__matrix_8c" startline="290" endline="308">s21_sub_matrix</referencedby>
+        <referencedby refid="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" compoundref="s21__matrix_8c" startline="270" endline="288">s21_sum_matrix</referencedby>
+        <referencedby refid="group__matrix__algebra_1ga4a5bbe0e14296f6ec7a91e57ac202ed2" compoundref="s21__matrix_8c" startline="351" endline="367">s21_transpose</referencedby>
+        <referencedby refid="group__test__create_1ga461920efadcd08fa06c5b1c8f6ceab97" compoundref="s21__matrix__test_8c" startline="56" endline="64">START_TEST</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Структура для представления матрицы. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>matrix_struct</label>
+        <link refid="structmatrix__struct"/>
+      </node>
+    </collaborationgraph>
+    <location file="src/s21_matrix.h" line="30" column="1" bodyfile="src/s21_matrix.h" bodystart="30" bodyend="34"/>
+    <listofallmembers>
+      <member refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" prot="public" virt="non-virtual"><scope>matrix_struct</scope><name>columns</name></member>
+      <member refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" prot="public" virt="non-virtual"><scope>matrix_struct</scope><name>matrix</name></member>
+      <member refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" prot="public" virt="non-virtual"><scope>matrix_struct</scope><name>rows</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

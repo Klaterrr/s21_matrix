@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="group__test__eq" kind="group">
+    <compoundname>test_eq</compoundname>
+    <title>Тесты s21_eq_matrix</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__test__eq_1gabd1295f4c93b55ca9d2ab0d681c02dca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_eq_matrix_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_eq_matrix_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка сравнения двух полностью идентичных матриц. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="97" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="97" bodyend="111"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__eq_1ga720f3aae3f5c7d21885178d84824e734" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_eq_matrix_fail_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_eq_matrix_fail_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка сравнения матриц, отличающихся одним элементом. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="118" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="118" bodyend="133"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__eq_1gac581d0bfbced93258a253713b234ce9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_eq_matrix_fail_2)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_eq_matrix_fail_2</type>
+        </param>
+        <briefdescription>
+<para>Проверка сравнения матриц разного размера. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="140" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="140" bodyend="148"/>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__eq_1gab960552203f46d106eab78405391802a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_eq_matrix_precision)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_eq_matrix_precision</type>
+        </param>
+        <briefdescription>
+<para>Проверка сравнения вещественных чисел с заданной точностью S21_EPS. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="155" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="155" bodyend="167"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

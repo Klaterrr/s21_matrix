@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="group__test__algebra" kind="group">
+    <compoundname>test_algebra</compoundname>
+    <title>Тесты алгебраических операций</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__test__algebra_1ga9930b15454a568a00deaede8e4508dd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_determinant_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_determinant_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка вычисления определителя для матрицы с нулевым определителем. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="362" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="362" bodyend="374"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__algebra_1gab809790279b8eea5d5519fa914bdbf02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_determinant_2)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_determinant_2</type>
+        </param>
+        <briefdescription>
+<para>Проверка вычисления определителя для матрицы 2x2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="381" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="381" bodyend="392"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__algebra_1ga244c0c28bb0c73265b1978bb042c265a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_determinant_fail)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_determinant_fail</type>
+        </param>
+        <briefdescription>
+<para>Проверка ошибки вычисления определителя для неквадратной матрицы. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="399" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="399" bodyend="406"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" compoundref="s21__matrix_8h" startline="42">CALCULATION_ERROR</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__algebra_1gad1aa328504824fe335a97917c33e41b6" compoundref="s21__matrix_8c" startline="370" endline="398">s21_determinant</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__algebra_1ga6a4345b2f398a35347dce29c7a2fc196" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_complements_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_complements_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка успешного вычисления матрицы алгебраических дополнений. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="413" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="413" bodyend="433"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" compoundref="s21__matrix_8c" startline="400" endline="418">s21_calc_complements</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__algebra_1ga64dd27616e469f0adb0203f22b3ba400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_complements_fail)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_complements_fail</type>
+        </param>
+        <briefdescription>
+<para>Проверка ошибки вычисления дополнений для неквадратной матрицы. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="440" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="440" bodyend="447"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" compoundref="s21__matrix_8h" startline="42">CALCULATION_ERROR</references>
+        <references refid="group__matrix__algebra_1gab1e3ac9001c0a4e67e876f90d60d23e1" compoundref="s21__matrix_8c" startline="400" endline="418">s21_calc_complements</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__algebra_1gacaa95eb0298ad8ce3b31e8e9f9c36891" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_inverse_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_inverse_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка успешного нахождения обратной матрицы. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="454" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="454" bodyend="474"/>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1ga63bcd0d51a932d940a62b7356b69bfe7" compoundref="s21__matrix_8c" startline="245" endline="268">s21_eq_matrix</references>
+        <references refid="group__matrix__algebra_1gacf36c0578df2e0b3a9e63fc8ad3b3276" compoundref="s21__matrix_8c" startline="421" endline="445">s21_inverse_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__algebra_1ga7affc7d4587a65c19f76e3a825fd2671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_inverse_fail_det_zero)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_inverse_fail_det_zero</type>
+        </param>
+        <briefdescription>
+<para>Проверка ошибки нахождения обратной матрицы для вырожденной матрицы (определитель 0). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="481" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="481" bodyend="492"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" compoundref="s21__matrix_8h" startline="42">CALCULATION_ERROR</references>
+        <references refid="structmatrix__struct_1aae4109605ff69a4afc61a92f7b374a2f" compoundref="s21__matrix_8h" startline="31">matrix_struct::matrix</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__algebra_1gacf36c0578df2e0b3a9e63fc8ad3b3276" compoundref="s21__matrix_8c" startline="421" endline="445">s21_inverse_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

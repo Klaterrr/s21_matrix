@@ -1,0 +1,285 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="group__matrix__arithmetic" kind="group">
+    <compoundname>matrix_arithmetic</compoundname>
+    <title>Арифметические операции</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__matrix__arithmetic_1gaaa350889d1c45b3b8bb269f9c37e94e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int s21_sum_matrix</definition>
+        <argsstring>(matrix_t *A, matrix_t *B, matrix_t *result)</argsstring>
+        <name>s21_sum_matrix</name>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Складывает две матрицы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Складывает матрицу B с матрицей A и сохраняет результат в <computeroutput>result</computeroutput>. Матрицы A и B должны иметь одинаковые размеры. Функция сама создает результирующую матрицу <computeroutput>result</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на первое слагаемое. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на второе слагаемое. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на результирующую матрицу (сумма). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Код результата операции: </para>
+</simplesect>
+<simplesect kind="return"><para>OK (0) - в случае успеха. </para>
+</simplesect>
+<simplesect kind="return"><para>INCORRECT_MATRIX (1) - если одна из матриц A или B некорректна. </para>
+</simplesect>
+<simplesect kind="return"><para>CALCULATION_ERROR (2) - если размеры матриц A и B не совпадают. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="108" column="5" bodyfile="src/s21_matrix.c" bodystart="270" bodyend="288" declfile="src/s21_matrix.h" declline="108" declcolumn="5"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" compoundref="s21__matrix_8h" startline="42">CALCULATION_ERROR</references>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" compoundref="s21__matrix_8h" startline="41">INCORRECT_MATRIX</references>
+        <references refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <referencedby refid="group__test__sum__sub_1gae05c542b3d9f1a8dba5f04f020f0cea4" compoundref="s21__matrix__test_8c" startline="178" endline="200">START_TEST</referencedby>
+        <referencedby refid="group__test__sum__sub_1ga31fc0a16da9934801764380f93eaad6e" compoundref="s21__matrix__test_8c" startline="207" endline="217">START_TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group__matrix__arithmetic_1ga1942072e4680db31e2854b071b00c3fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int s21_sub_matrix</definition>
+        <argsstring>(matrix_t *A, matrix_t *B, matrix_t *result)</argsstring>
+        <name>s21_sub_matrix</name>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Вычитает одну матрицу из другой. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Вычитает матрицу B из матрицы A и сохраняет результат в <computeroutput>result</computeroutput>. Матрицы A и B должны иметь одинаковые размеры. Функция сама создает результирующую матрицу <computeroutput>result</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на уменьшаемое. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на вычитаемое. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на результирующую матрицу (разность). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Код результата операции: </para>
+</simplesect>
+<simplesect kind="return"><para>OK (0) - в случае успеха. </para>
+</simplesect>
+<simplesect kind="return"><para>INCORRECT_MATRIX (1) - если одна из матриц A или B некорректна. </para>
+</simplesect>
+<simplesect kind="return"><para>CALCULATION_ERROR (2) - если размеры матриц A и B не совпадают. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="124" column="5" bodyfile="src/s21_matrix.c" bodystart="290" bodyend="308" declfile="src/s21_matrix.h" declline="124" declcolumn="5"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" compoundref="s21__matrix_8h" startline="42">CALCULATION_ERROR</references>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" compoundref="s21__matrix_8h" startline="41">INCORRECT_MATRIX</references>
+        <references refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <referencedby refid="group__test__sum__sub_1gaa1d3fd550be47b9d6d49e5a8db5c8242" compoundref="s21__matrix__test_8c" startline="224" endline="246">START_TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group__matrix__arithmetic_1gacd185705783880e5cc7c233329b9d7ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int s21_mult_number</definition>
+        <argsstring>(matrix_t *A, double number, matrix_t *result)</argsstring>
+        <name>s21_mult_number</name>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>number</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Умножает матрицу на скалярное значение. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Умножает каждый элемент матрицы A на число <computeroutput>number</computeroutput> и сохраняет результат в <computeroutput>result</computeroutput>. Функция сама создает результирующую матрицу <computeroutput>result</computeroutput>. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на матрицу для умножения. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">number</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Скалярное значение, на которое умножается матрица. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на результирующую матрицу (произведение). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Код результата операции: </para>
+</simplesect>
+<simplesect kind="return"><para>OK (0) - в случае успеха. </para>
+</simplesect>
+<simplesect kind="return"><para>INCORRECT_MATRIX (1) - если матрица A некорректна или не удалось создать результирующую матрицу. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="139" column="5" bodyfile="src/s21_matrix.c" bodystart="310" bodyend="326" declfile="src/s21_matrix.h" declline="139" declcolumn="5"/>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" compoundref="s21__matrix_8h" startline="41">INCORRECT_MATRIX</references>
+        <references refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <referencedby refid="s21__matrix_8c_1a96a189c4d33a3082ff66f8e0ca67531d" compoundref="s21__matrix_8c" startline="154" endline="179">perform_inverse_calculation</referencedby>
+        <referencedby refid="group__test__mult_1gad56b68d6f5c9d91d554b178a91decb83" compoundref="s21__matrix__test_8c" startline="257" endline="275">START_TEST</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="group__matrix__arithmetic_1ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int s21_mult_matrix</definition>
+        <argsstring>(matrix_t *A, matrix_t *B, matrix_t *result)</argsstring>
+        <name>s21_mult_matrix</name>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>A</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type><ref refid="s21__matrix_8h_1a6121abdcc0c0f5e9a8c42390d3274fdd" kindref="member">matrix_t</ref> *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Умножает две матрицы. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">A</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на первую матрицу-множитель. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">B</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на вторую матрицу-множитель. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">result</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Указатель на результирующую матрицу (произведение). </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>OK (0) - успех. </para>
+</simplesect>
+<simplesect kind="return"><para>INCORRECT_MATRIX (1) - если одна из матриц некорректна. </para>
+</simplesect>
+<simplesect kind="return"><para>CALCULATION_ERROR (2) - если количество столбцов A не равно количеству строк B. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/s21_matrix.h" line="151" column="5" bodyfile="src/s21_matrix.c" bodystart="328" bodyend="348" declfile="src/s21_matrix.h" declline="151" declcolumn="5"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584" compoundref="s21__matrix_8h" startline="42">CALCULATION_ERROR</references>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" compoundref="s21__matrix_8h" startline="41">INCORRECT_MATRIX</references>
+        <references refid="s21__matrix_8c_1a8607e5041297f423db89ce899f0af7e0" compoundref="s21__matrix_8c" startline="44" endline="46">is_matrix_valid</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="s21__matrix_8c_1ae9d2106673240ba90364150a17349e70" compoundref="s21__matrix_8c" startline="79" endline="89">perform_multiplication</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <referencedby refid="group__test__mult_1ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" compoundref="s21__matrix__test_8c" startline="282" endline="305">START_TEST</referencedby>
+        <referencedby refid="group__test__mult_1ga4a8853be0f5d3d18553a3b15eb47ffd9" compoundref="s21__matrix__test_8c" startline="312" endline="322">START_TEST</referencedby>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Функции для сложения, вычитания и умножения матриц. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

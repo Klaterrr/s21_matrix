@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="group__unit__tests" kind="group">
+    <compoundname>unit_tests</compoundname>
+    <title>Юнит-тесты</title>
+    <innergroup refid="group__test__create">Тесты s21_create_matrix</innergroup>
+    <innergroup refid="group__test__eq">Тесты s21_eq_matrix</innergroup>
+    <innergroup refid="group__test__sum__sub">Тесты s21_sum_matrix и s21_sub_matrix</innergroup>
+    <innergroup refid="group__test__mult">Тесты операций умножения</innergroup>
+    <innergroup refid="group__test__transform">Тесты трансформаций матриц</innergroup>
+    <innergroup refid="group__test__algebra">Тесты алгебраических операций</innergroup>
+    <briefdescription>
+<para>Набор тестов для проверки корректности работы библиотеки s21_matrix. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

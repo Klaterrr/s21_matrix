@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.14.0" xml:lang="ru">
+  <compounddef id="group__test__create" kind="group">
+    <compoundname>test_create</compoundname>
+    <title>Тесты s21_create_matrix</title>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="group__test__create_1ga461920efadcd08fa06c5b1c8f6ceab97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>START_TEST</definition>
+        <argsstring>(test_create_matrix_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_create_matrix_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка успешного создания матрицы стандартного размера. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="56" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="56" bodyend="64"/>
+        <references refid="structmatrix__struct_1ada0243b85145d2029d0814485bc389f7" compoundref="s21__matrix_8h" startline="33">matrix_struct::columns</references>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59" compoundref="s21__matrix_8h" startline="40">OK</references>
+        <references refid="structmatrix__struct_1a1161ae2ab4d3b3207619bee96ef97f92" compoundref="s21__matrix_8h" startline="32">matrix_struct::rows</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+        <references refid="group__matrix__core_1gaad8337ad12e6dae5bdbbaf1d3b35e140" compoundref="s21__matrix_8c" startline="233" endline="243">s21_remove_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__create_1ga2d73ee9313e06a760f15d562c7ae7e88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_create_matrix_fail_1)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_create_matrix_fail_1</type>
+        </param>
+        <briefdescription>
+<para>Проверка ошибки создания матрицы с нулевым количеством строк. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="71" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="71" bodyend="75"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" compoundref="s21__matrix_8h" startline="41">INCORRECT_MATRIX</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+      </memberdef>
+      <memberdef kind="function" id="group__test__create_1gac18a3d69367e43ebac8337ca0c5021c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>END_TEST</type>
+        <definition>END_TEST START_TEST</definition>
+        <argsstring>(test_create_matrix_fail_2)</argsstring>
+        <name>START_TEST</name>
+        <param>
+          <type>test_create_matrix_fail_2</type>
+        </param>
+        <briefdescription>
+<para>Проверка ошибки создания матрицы с отрицательным количеством столбцов. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="src/tests/s21_matrix_test.c" line="82" column="1" bodyfile="src/tests/s21_matrix_test.c" bodystart="82" bodyend="86"/>
+        <references refid="s21__matrix_8h_1acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c" compoundref="s21__matrix_8h" startline="41">INCORRECT_MATRIX</references>
+        <references refid="group__matrix__core_1ga59fdb6ff4aeb96dc381c8f8986af2bd4" compoundref="s21__matrix_8c" startline="208" endline="231">s21_create_matrix</references>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>
