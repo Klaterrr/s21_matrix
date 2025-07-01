@@ -1,0 +1,42 @@
+name: Deploy Doxygen to GitHub Pages
+
+# Запускать воркфлоу при каждом пуше в ветку main
+on:
+  push:
+    branches:
+      - main # Или master, в зависимости от названия вашей основной ветки
+
+# Разрешения для токена, чтобы воркфлоу мог коммитить на ветку gh-pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Скачиваем код из репозитория
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Устанавливаем Doxygen и Graphviz (для диаграмм)
+      - name: Install Doxygen and Graphviz
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y doxygen graphviz
+
+      # 3. Генерируем документацию
+      - name: Generate Doxygen documentation
+        run: doxygen Doxyfile
+
+      # 4. Загружаем артефакт (сгенерированную документацию)
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./doxygen/html
+
+      # 5. Разворачиваем на GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
