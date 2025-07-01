@@ -1,0 +1,7 @@
+<map id="s21_sum_matrix" name="s21_sum_matrix">
+<area shape="rect" id="Node000001" title="Складывает две матрицы." alt="" coords="158,31,275,57"/>
+<area shape="rect" id="Node000002" href="$group__test__sum__sub.html#gae05c542b3d9f1a8dba5f04f020f0cea4" title="Проверка успешного сложения двух матриц." alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,35,110,30,111,24,143,30"/>
+<area shape="rect" id="Node000003" href="$group__test__sum__sub.html#ga31fc0a16da9934801764380f93eaad6e" title="Проверка ошибки сложения матриц разного размера." alt="" coords="5,56,110,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,58,111,64,110,58,142,53"/>
+</map>

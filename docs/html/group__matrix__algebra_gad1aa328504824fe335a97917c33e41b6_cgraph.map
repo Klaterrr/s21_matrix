@@ -1,0 +1,15 @@
+<map id="s21_determinant" name="s21_determinant">
+<area shape="rect" id="Node000001" title="Вычисляет определитель матрицы." alt="" coords="5,81,123,108"/>
+<area shape="poly" id="edge6_Node000001_Node000001" title=" " alt="" coords="35,82,29,73,33,63,45,57,64,55,85,57,96,64,93,68,83,62,64,60,46,62,37,67,35,72,39,80"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html#ad0f646f72453f127ab099735d14377c0" title="Создает минорную матрицу, исключая заданную строку и столбец." alt="" coords="174,5,296,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,78,170,42,183,36,185,41,172,46,94,83"/>
+<area shape="rect" id="Node000003" href="$s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="181,56,289,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="123,83,165,77,166,82,124,89"/>
+<area shape="rect" id="Node000004" href="$group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="171,107,299,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="124,101,156,106,155,111,123,106"/>
+<area shape="rect" id="Node000006" href="$group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="539,132,675,159"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="88,106,126,127,171,143,265,157,359,162,448,159,524,153,524,159,449,165,359,167,264,163,170,148,124,131,86,111"/>
+<area shape="rect" id="Node000005" href="$s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="347,107,491,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="299,117,332,117,332,123,299,123"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="492,127,524,131,523,137,491,132"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="s21_inverse_matrix" name="s21_inverse_matrix">
+<area shape="rect" id="Node000001" title="Находит обратную матрицу." alt="" coords="158,31,292,57"/>
+<area shape="rect" id="Node000002" href="$group__test__algebra.html#gacaa95eb0298ad8ce3b31e8e9f9c36891" title="Проверка успешного нахождения обратной матрицы." alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,34,110,29,111,24,143,29"/>
+<area shape="rect" id="Node000003" href="$group__test__algebra.html#ga7affc7d4587a65c19f76e3a825fd2671" title="Проверка ошибки нахождения обратной матрицы для вырожденной матрицы (определитель 0)." alt="" coords="5,56,110,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,59,111,64,110,59,142,54"/>
+</map>

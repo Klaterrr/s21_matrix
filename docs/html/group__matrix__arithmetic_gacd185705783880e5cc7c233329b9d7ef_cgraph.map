@@ -1,0 +1,11 @@
+<map id="s21_mult_number" name="s21_mult_number">
+<area shape="rect" id="Node000001" title="Умножает матрицу на скалярное значение." alt="" coords="5,31,130,57"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="188,5,296,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,32,172,26,173,31,131,38"/>
+<area shape="rect" id="Node000003" href="$group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="178,56,306,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="131,50,163,55,162,60,130,56"/>
+<area shape="rect" id="Node000004" href="$s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="354,56,498,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="306,67,339,67,339,72,306,72"/>
+<area shape="rect" id="Node000005" href="$group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="546,56,682,83"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="499,67,531,67,531,72,499,72"/>
+</map>

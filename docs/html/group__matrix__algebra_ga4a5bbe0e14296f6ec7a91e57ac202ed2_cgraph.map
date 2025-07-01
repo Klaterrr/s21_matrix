@@ -1,0 +1,13 @@
+<map id="s21_transpose" name="s21_transpose">
+<area shape="rect" id="Node000001" title="Транспонирует матрицу." alt="" coords="5,56,112,83"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="179,5,287,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,53,169,34,170,39,108,58"/>
+<area shape="rect" id="Node000003" href="$s21__matrix_8c.html#a4d867d79fab5221c0825b4ef15c8d99c" title="Копирует элементы из исходной матрицы в транспонированную." alt="" coords="160,56,306,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="112,67,144,67,144,72,112,72"/>
+<area shape="rect" id="Node000004" href="$group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="169,107,297,133"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="108,81,170,99,169,104,106,86"/>
+<area shape="rect" id="Node000005" href="$s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="354,107,498,133"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="298,117,338,117,338,123,298,123"/>
+<area shape="rect" id="Node000006" href="$group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="546,107,682,133"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="499,117,531,117,531,123,499,123"/>
+</map>

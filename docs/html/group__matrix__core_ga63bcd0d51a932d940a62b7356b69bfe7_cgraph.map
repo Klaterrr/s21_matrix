@@ -1,0 +1,5 @@
+<map id="s21_eq_matrix" name="s21_eq_matrix">
+<area shape="rect" id="Node000001" title="Сравнивает две матрицы на идентичность с точностью до S21_EPS." alt="" coords="5,5,112,32"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="160,5,268,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,16,144,16,144,21,112,21"/>
+</map>

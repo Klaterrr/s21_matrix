@@ -1,0 +1,7 @@
+<map id="s21_mult_matrix" name="s21_mult_matrix">
+<area shape="rect" id="Node000001" title="Умножает две матрицы." alt="" coords="158,31,275,57"/>
+<area shape="rect" id="Node000002" href="$group__test__mult.html#ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" title="Проверка успешного умножения двух совместимых матриц." alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="142,35,110,30,111,24,143,30"/>
+<area shape="rect" id="Node000003" href="$group__test__mult.html#ga4a8853be0f5d3d18553a3b15eb47ffd9" title="Проверка ошибки умножения двух несовместимых матриц." alt="" coords="5,56,110,83"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="143,58,111,64,110,58,142,53"/>
+</map>

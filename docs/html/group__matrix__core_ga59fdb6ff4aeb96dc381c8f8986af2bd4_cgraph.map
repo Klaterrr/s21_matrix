@@ -1,0 +1,7 @@
+<map id="s21_create_matrix" name="s21_create_matrix">
+<area shape="rect" id="Node000001" title="Создает матрицу заданного размера." alt="" coords="5,5,134,32"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="182,5,326,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="134,16,166,16,166,21,134,21"/>
+<area shape="rect" id="Node000003" href="$group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="374,5,509,32"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="326,16,358,16,358,21,326,21"/>
+</map>

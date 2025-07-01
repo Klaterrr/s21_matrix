@@ -1,0 +1,416 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21_matrix Library: Арифметические операции</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">s21_matrix Library<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Библиотека для работы с матрицами на языке C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('group__matrix__arithmetic.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Арифметические операции </div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Функции для сложения, вычитания и умножения матриц.  
+<a href="#details">Подробнее...</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:gaaa350889d1c45b3b8bb269f9c37e94e7" id="r_gaaa350889d1c45b3b8bb269f9c37e94e7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gaaa350889d1c45b3b8bb269f9c37e94e7">s21_sum_matrix</a> (<a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *B, <a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result)</td></tr>
+<tr class="memdesc:gaaa350889d1c45b3b8bb269f9c37e94e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Складывает две матрицы.  <br /></td></tr>
+<tr class="memitem:ga1942072e4680db31e2854b071b00c3fc" id="r_ga1942072e4680db31e2854b071b00c3fc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga1942072e4680db31e2854b071b00c3fc">s21_sub_matrix</a> (<a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *B, <a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result)</td></tr>
+<tr class="memdesc:ga1942072e4680db31e2854b071b00c3fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Вычитает одну матрицу из другой.  <br /></td></tr>
+<tr class="memitem:gacd185705783880e5cc7c233329b9d7ef" id="r_gacd185705783880e5cc7c233329b9d7ef"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#gacd185705783880e5cc7c233329b9d7ef">s21_mult_number</a> (<a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, double number, <a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result)</td></tr>
+<tr class="memdesc:gacd185705783880e5cc7c233329b9d7ef"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножает матрицу на скалярное значение.  <br /></td></tr>
+<tr class="memitem:ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" id="r_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3">s21_mult_matrix</a> (<a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *B, <a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result)</td></tr>
+<tr class="memdesc:ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Умножает две матрицы.  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<p>Функции для сложения, вычитания и умножения матриц. </p>
+<a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3" name="ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3">&#9670;&#160;</a></span>s21_mult_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21_mult_matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>B</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Умножает две матрицы. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A</td><td>Указатель на первую матрицу-множитель. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">B</td><td>Указатель на вторую матрицу-множитель. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Указатель на результирующую матрицу (произведение). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>OK (0) - успех. </dd>
+<dd>
+INCORRECT_MATRIX (1) - если одна из матриц некорректна. </dd>
+<dd>
+CALCULATION_ERROR (2) - если количество столбцов A не равно количеству строк B. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_cgraph.png" border="0" usemap="#agroup__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_cgraph" id="agroup__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_cgraph">
+<area shape="rect" title="Умножает две матрицы." alt="" coords="5,56,123,83"/>
+<area shape="rect" href="s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="191,5,299,32"/>
+<area shape="poly" title=" " alt="" coords="114,53,179,34,181,39,115,58"/>
+<area shape="rect" href="s21__matrix_8c.html#ae9d2106673240ba90364150a17349e70" title="Выполняет вычисление произведения двух матриц и записывает в результирующую." alt="" coords="171,56,319,83"/>
+<area shape="poly" title=" " alt="" coords="123,67,155,67,155,72,123,72"/>
+<area shape="rect" href="group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="181,107,309,133"/>
+<area shape="poly" title=" " alt="" coords="115,81,181,99,179,105,114,86"/>
+<area shape="rect" href="s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="367,107,511,133"/>
+<area shape="poly" title=" " alt="" coords="309,117,351,117,351,123,309,123"/>
+<area shape="rect" href="group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="559,107,695,133"/>
+<area shape="poly" title=" " alt="" coords="512,117,544,117,544,123,512,123"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_icgraph.png" border="0" usemap="#agroup__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_icgraph" id="agroup__matrix__arithmetic_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3_icgraph">
+<area shape="rect" title="Умножает две матрицы." alt="" coords="158,31,275,57"/>
+<area shape="rect" href="group__test__mult.html#ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" title="Проверка успешного умножения двух совместимых матриц." alt="" coords="5,5,110,32"/>
+<area shape="poly" title=" " alt="" coords="142,35,110,30,111,24,143,30"/>
+<area shape="rect" href="group__test__mult.html#ga4a8853be0f5d3d18553a3b15eb47ffd9" title="Проверка ошибки умножения двух несовместимых матриц." alt="" coords="5,56,110,83"/>
+<area shape="poly" title=" " alt="" coords="143,58,111,64,110,58,142,53"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gacd185705783880e5cc7c233329b9d7ef" name="gacd185705783880e5cc7c233329b9d7ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gacd185705783880e5cc7c233329b9d7ef">&#9670;&#160;</a></span>s21_mult_number()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21_mult_number </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>number</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Умножает матрицу на скалярное значение. </p>
+<p>Умножает каждый элемент матрицы A на число <span class="tt">number</span> и сохраняет результат в <span class="tt">result</span>. Функция сама создает результирующую матрицу <span class="tt">result</span>. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A</td><td>Указатель на матрицу для умножения. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">number</td><td>Скалярное значение, на которое умножается матрица. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Указатель на результирующую матрицу (произведение). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата операции: </dd>
+<dd>
+OK (0) - в случае успеха. </dd>
+<dd>
+INCORRECT_MATRIX (1) - если матрица A некорректна или не удалось создать результирующую матрицу. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_cgraph.png" border="0" usemap="#agroup__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_cgraph" id="agroup__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_cgraph">
+<area shape="rect" title="Умножает матрицу на скалярное значение." alt="" coords="5,31,130,57"/>
+<area shape="rect" href="s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="188,5,296,32"/>
+<area shape="poly" title=" " alt="" coords="130,32,172,26,173,31,131,38"/>
+<area shape="rect" href="group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="178,56,306,83"/>
+<area shape="poly" title=" " alt="" coords="131,50,163,55,162,60,130,56"/>
+<area shape="rect" href="s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="354,56,498,83"/>
+<area shape="poly" title=" " alt="" coords="306,67,339,67,339,72,306,72"/>
+<area shape="rect" href="group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="546,56,682,83"/>
+<area shape="poly" title=" " alt="" coords="499,67,531,67,531,72,499,72"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_icgraph.png" border="0" usemap="#agroup__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_icgraph" id="agroup__matrix__arithmetic_gacd185705783880e5cc7c233329b9d7ef_icgraph">
+<area shape="rect" title="Умножает матрицу на скалярное значение." alt="" coords="571,56,696,83"/>
+<area shape="rect" href="s21__matrix_8c.html#a96a189c4d33a3082ff66f8e0ca67531d" title="Выполняет основную последовательность вычислений для нахождения обратной матрицы." alt="" coords="340,31,523,57"/>
+<area shape="poly" title=" " alt="" coords="555,62,523,58,524,53,556,57"/>
+<area shape="rect" href="group__test__mult.html#gad56b68d6f5c9d91d554b178a91decb83" title="Проверка успешного умножения матрицы на число." alt="" coords="380,81,484,108"/>
+<area shape="poly" title=" " alt="" coords="556,82,485,91,484,85,555,76"/>
+<area shape="rect" href="group__matrix__algebra.html#gacf36c0578df2e0b3a9e63fc8ad3b3276" title="Находит обратную матрицу." alt="" coords="158,31,292,57"/>
+<area shape="poly" title=" " alt="" coords="325,47,292,47,292,41,325,41"/>
+<area shape="rect" href="group__test__algebra.html#gacaa95eb0298ad8ce3b31e8e9f9c36891" title="Проверка успешного нахождения обратной матрицы." alt="" coords="5,5,110,32"/>
+<area shape="poly" title=" " alt="" coords="142,34,110,29,111,24,143,29"/>
+<area shape="rect" href="group__test__algebra.html#ga7affc7d4587a65c19f76e3a825fd2671" title="Проверка ошибки нахождения обратной матрицы для вырожденной матрицы (определитель 0)." alt="" coords="5,56,110,83"/>
+<area shape="poly" title=" " alt="" coords="143,59,111,64,110,59,142,54"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ga1942072e4680db31e2854b071b00c3fc" name="ga1942072e4680db31e2854b071b00c3fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ga1942072e4680db31e2854b071b00c3fc">&#9670;&#160;</a></span>s21_sub_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21_sub_matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>B</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Вычитает одну матрицу из другой. </p>
+<p>Вычитает матрицу B из матрицы A и сохраняет результат в <span class="tt">result</span>. Матрицы A и B должны иметь одинаковые размеры. Функция сама создает результирующую матрицу <span class="tt">result</span>. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A</td><td>Указатель на уменьшаемое. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">B</td><td>Указатель на вычитаемое. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Указатель на результирующую матрицу (разность). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата операции: </dd>
+<dd>
+OK (0) - в случае успеха. </dd>
+<dd>
+INCORRECT_MATRIX (1) - если одна из матриц A или B некорректна. </dd>
+<dd>
+CALCULATION_ERROR (2) - если размеры матриц A и B не совпадают. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_cgraph.png" border="0" usemap="#agroup__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_cgraph" id="agroup__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_cgraph">
+<area shape="rect" title="Вычитает одну матрицу из другой." alt="" coords="5,31,119,57"/>
+<area shape="rect" href="s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="177,5,285,32"/>
+<area shape="poly" title=" " alt="" coords="119,33,161,26,162,32,120,38"/>
+<area shape="rect" href="group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="167,56,295,83"/>
+<area shape="poly" title=" " alt="" coords="120,50,151,55,151,60,119,55"/>
+<area shape="rect" href="s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="343,56,487,83"/>
+<area shape="poly" title=" " alt="" coords="295,67,328,67,328,72,295,72"/>
+<area shape="rect" href="group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="535,56,671,83"/>
+<area shape="poly" title=" " alt="" coords="488,67,520,67,520,72,488,72"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_icgraph.png" border="0" usemap="#agroup__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_icgraph" id="agroup__matrix__arithmetic_ga1942072e4680db31e2854b071b00c3fc_icgraph">
+<area shape="rect" title="Вычитает одну матрицу из другой." alt="" coords="158,5,271,32"/>
+<area shape="rect" href="group__test__sum__sub.html#gaa1d3fd550be47b9d6d49e5a8db5c8242" title="Проверка успешного вычитания двух матриц." alt="" coords="5,5,110,32"/>
+<area shape="poly" title=" " alt="" coords="142,21,110,21,110,16,142,16"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="gaaa350889d1c45b3b8bb269f9c37e94e7" name="gaaa350889d1c45b3b8bb269f9c37e94e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#gaaa350889d1c45b3b8bb269f9c37e94e7">&#9670;&#160;</a></span>s21_sum_matrix()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int s21_sum_matrix </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>A</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>B</em></span>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *</td>          <td class="paramname"><span class="paramname"><em>result</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Складывает две матрицы. </p>
+<p>Складывает матрицу B с матрицей A и сохраняет результат в <span class="tt">result</span>. Матрицы A и B должны иметь одинаковые размеры. Функция сама создает результирующую матрицу <span class="tt">result</span>. </p><dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramdir">[in]</td><td class="paramname">A</td><td>Указатель на первое слагаемое. </td></tr>
+    <tr><td class="paramdir">[in]</td><td class="paramname">B</td><td>Указатель на второе слагаемое. </td></tr>
+    <tr><td class="paramdir">[out]</td><td class="paramname">result</td><td>Указатель на результирующую матрицу (сумма). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код результата операции: </dd>
+<dd>
+OK (0) - в случае успеха. </dd>
+<dd>
+INCORRECT_MATRIX (1) - если одна из матриц A или B некорректна. </dd>
+<dd>
+CALCULATION_ERROR (2) - если размеры матриц A и B не совпадают. </dd></dl>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_cgraph.png" border="0" usemap="#agroup__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_cgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_cgraph" id="agroup__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_cgraph">
+<area shape="rect" title="Складывает две матрицы." alt="" coords="5,31,123,57"/>
+<area shape="rect" href="s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="181,5,289,32"/>
+<area shape="poly" title=" " alt="" coords="123,33,165,26,166,32,124,38"/>
+<area shape="rect" href="group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="171,56,299,83"/>
+<area shape="poly" title=" " alt="" coords="124,50,156,55,155,60,123,55"/>
+<area shape="rect" href="s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="347,56,491,83"/>
+<area shape="poly" title=" " alt="" coords="299,67,332,67,332,72,299,72"/>
+<area shape="rect" href="group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="539,56,675,83"/>
+<area shape="poly" title=" " alt="" coords="492,67,524,67,524,72,492,72"/>
+</map>
+</div>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="group__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_icgraph.png" border="0" usemap="#agroup__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_icgraph" loading="lazy" alt=""/></div>
+<map name="agroup__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_icgraph" id="agroup__matrix__arithmetic_gaaa350889d1c45b3b8bb269f9c37e94e7_icgraph">
+<area shape="rect" title="Складывает две матрицы." alt="" coords="158,31,275,57"/>
+<area shape="rect" href="group__test__sum__sub.html#gae05c542b3d9f1a8dba5f04f020f0cea4" title="Проверка успешного сложения двух матриц." alt="" coords="5,5,110,32"/>
+<area shape="poly" title=" " alt="" coords="142,35,110,30,111,24,143,30"/>
+<area shape="rect" href="group__test__sum__sub.html#ga31fc0a16da9934801764380f93eaad6e" title="Проверка ошибки сложения матриц разного размера." alt="" coords="5,56,110,83"/>
+<area shape="poly" title=" " alt="" coords="143,58,111,64,110,58,142,53"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

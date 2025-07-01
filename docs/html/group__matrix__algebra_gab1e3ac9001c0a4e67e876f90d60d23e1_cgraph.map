@@ -1,0 +1,24 @@
+<map id="s21_calc_complements" name="s21_calc_complements">
+<area shape="rect" id="Node000001" title="Вычисляет матрицу алгебраических дополнений." alt="" coords="5,156,164,183"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="590,5,699,32"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="116,153,245,102,328,73,414,48,497,32,575,22,575,27,498,37,416,53,330,78,247,107,118,158"/>
+<area shape="rect" id="Node000003" href="$s21__matrix_8c.html#a2c36041738ad182088945fcd15eca832" title="Заполняет матрицу алгебраическими дополнениями." alt="" coords="212,148,367,191"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="164,167,196,167,196,172,164,172"/>
+<area shape="rect" id="Node000005" href="$group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="580,232,709,259"/>
+<area shape="poly" id="edge14_Node000001_Node000005" title=" " alt="" coords="133,181,212,200,306,215,402,226,565,239,565,244,401,232,306,221,211,205,131,186"/>
+<area shape="rect" id="Node000004" href="$s21__matrix_8c.html#ad0f646f72453f127ab099735d14377c0" title="Создает минорную матрицу, исключая заданную строку и столбец." alt="" coords="584,181,705,208"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="368,172,568,187,568,192,367,178"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="368,183,566,226,565,231,367,189"/>
+<area shape="rect" id="Node000007" href="$group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="949,131,1084,157"/>
+<area shape="poly" id="edge13_Node000003_Node000007" title=" " alt="" coords="323,145,414,92,489,77,565,70,642,70,717,76,854,98,957,123,956,128,853,103,717,81,642,76,566,75,490,82,416,97,326,150"/>
+<area shape="rect" id="Node000008" href="$group__matrix__algebra.html#gad1aa328504824fe335a97917c33e41b6" title="Вычисляет определитель матрицы." alt="" coords="415,131,532,157"/>
+<area shape="poly" id="edge7_Node000003_Node000008" title=" " alt="" coords="367,156,399,151,400,157,368,161"/>
+<area shape="rect" id="Node000006" href="$s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="757,207,901,233"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="708,234,741,229,742,235,709,239"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="863,204,966,161,968,166,865,209"/>
+<area shape="poly" id="edge9_Node000008_Node000002" title=" " alt="" coords="492,128,611,40,614,44,495,132"/>
+<area shape="poly" id="edge8_Node000008_Node000004" title=" " alt="" coords="522,155,583,174,582,179,521,161"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="493,156,533,186,582,218,592,223,590,228,579,222,529,190,490,160"/>
+<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="533,141,933,141,933,147,533,147"/>
+<area shape="poly" id="edge11_Node000008_Node000008" title=" " alt="" coords="444,132,439,122,443,112,455,106,474,104,494,107,505,113,502,118,493,112,474,109,456,111,447,116,444,121,449,129"/>
+</map>
