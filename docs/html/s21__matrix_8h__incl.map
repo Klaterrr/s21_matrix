@@ -1,0 +1,11 @@
+<map id="src/s21_matrix.h" name="src/s21_matrix.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для библиотеки работы с матрицами." alt="" coords="105,5,223,32"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,80,67,107"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,35,73,74,70,70,140,30"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="91,80,152,107"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="159,34,139,68,134,65,154,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="175,80,238,107"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="174,31,194,65,189,68,169,34"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="262,80,330,107"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="188,30,261,70,259,75,186,35"/>
+</map>

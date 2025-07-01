@@ -1,0 +1,233 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21_matrix Library: Файл src/tests/s21_matrix_test.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">s21_matrix Library<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Библиотека для работы с матрицами на языке C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('s21__matrix__test_8c.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">Файл s21_matrix_test.c</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Юнит-тесты для библиотеки s21_matrix.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &lt;check.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="s21__matrix_8h_source.html">../s21_matrix.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для s21_matrix_test.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="s21__matrix__test_8c__incl.png" border="0" usemap="#asrc_2tests_2s21__matrix__test_8c" loading="lazy" alt=""/></div>
+<map name="asrc_2tests_2s21__matrix__test_8c" id="asrc_2tests_2s21__matrix__test_8c">
+<area shape="rect" title="Юнит&#45;тесты для библиотеки s21_matrix." alt="" coords="38,5,178,48"/>
+<area shape="rect" title=" " alt="" coords="18,96,86,123"/>
+<area shape="poly" title=" " alt="" coords="96,50,72,85,67,82,91,47"/>
+<area shape="rect" href="s21__matrix_8h.html" title="Заголовочный файл для библиотеки работы с матрицами." alt="" coords="110,96,218,123"/>
+<area shape="poly" title=" " alt="" coords="125,47,149,82,144,85,120,50"/>
+<area shape="rect" title=" " alt="" coords="5,171,67,197"/>
+<area shape="poly" title=" " alt="" coords="143,126,73,165,70,160,140,121"/>
+<area shape="rect" title=" " alt="" coords="91,171,152,197"/>
+<area shape="poly" title=" " alt="" coords="159,125,139,159,134,156,154,122"/>
+<area shape="rect" title=" " alt="" coords="175,171,238,197"/>
+<area shape="poly" title=" " alt="" coords="174,122,194,156,189,159,169,125"/>
+<area shape="rect" title=" " alt="" coords="262,171,330,197"/>
+<area shape="poly" title=" " alt="" coords="188,121,261,161,259,165,186,126"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 id="header-func-members" class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ga461920efadcd08fa06c5b1c8f6ceab97" id="r_ga461920efadcd08fa06c5b1c8f6ceab97"><td class="memItemLeft" align="right" valign="top">
+&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_create_matrix_1)</td></tr>
+<tr class="memdesc:ga461920efadcd08fa06c5b1c8f6ceab97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного создания матрицы стандартного размера. <br /></td></tr>
+<tr class="memitem:ga2d73ee9313e06a760f15d562c7ae7e88" id="r_ga2d73ee9313e06a760f15d562c7ae7e88"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_create_matrix_fail_1)</td></tr>
+<tr class="memdesc:ga2d73ee9313e06a760f15d562c7ae7e88"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ошибки создания матрицы с нулевым количеством строк. <br /></td></tr>
+<tr class="memitem:gac18a3d69367e43ebac8337ca0c5021c5" id="r_gac18a3d69367e43ebac8337ca0c5021c5"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_create_matrix_fail_2)</td></tr>
+<tr class="memdesc:gac18a3d69367e43ebac8337ca0c5021c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ошибки создания матрицы с отрицательным количеством столбцов. <br /></td></tr>
+<tr class="memitem:gabd1295f4c93b55ca9d2ab0d681c02dca" id="r_gabd1295f4c93b55ca9d2ab0d681c02dca"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_eq_matrix_1)</td></tr>
+<tr class="memdesc:gabd1295f4c93b55ca9d2ab0d681c02dca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка сравнения двух полностью идентичных матриц. <br /></td></tr>
+<tr class="memitem:ga720f3aae3f5c7d21885178d84824e734" id="r_ga720f3aae3f5c7d21885178d84824e734"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_eq_matrix_fail_1)</td></tr>
+<tr class="memdesc:ga720f3aae3f5c7d21885178d84824e734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка сравнения матриц, отличающихся одним элементом. <br /></td></tr>
+<tr class="memitem:gac581d0bfbced93258a253713b234ce9b" id="r_gac581d0bfbced93258a253713b234ce9b"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_eq_matrix_fail_2)</td></tr>
+<tr class="memdesc:gac581d0bfbced93258a253713b234ce9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка сравнения матриц разного размера. <br /></td></tr>
+<tr class="memitem:gab960552203f46d106eab78405391802a" id="r_gab960552203f46d106eab78405391802a"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_eq_matrix_precision)</td></tr>
+<tr class="memdesc:gab960552203f46d106eab78405391802a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка сравнения вещественных чисел с заданной точностью S21_EPS. <br /></td></tr>
+<tr class="memitem:gae05c542b3d9f1a8dba5f04f020f0cea4" id="r_gae05c542b3d9f1a8dba5f04f020f0cea4"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_sum_matrix_1)</td></tr>
+<tr class="memdesc:gae05c542b3d9f1a8dba5f04f020f0cea4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного сложения двух матриц. <br /></td></tr>
+<tr class="memitem:ga31fc0a16da9934801764380f93eaad6e" id="r_ga31fc0a16da9934801764380f93eaad6e"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_sum_matrix_fail)</td></tr>
+<tr class="memdesc:ga31fc0a16da9934801764380f93eaad6e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ошибки сложения матриц разного размера. <br /></td></tr>
+<tr class="memitem:gaa1d3fd550be47b9d6d49e5a8db5c8242" id="r_gaa1d3fd550be47b9d6d49e5a8db5c8242"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_sub_matrix_1)</td></tr>
+<tr class="memdesc:gaa1d3fd550be47b9d6d49e5a8db5c8242"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного вычитания двух матриц. <br /></td></tr>
+<tr class="memitem:gad56b68d6f5c9d91d554b178a91decb83" id="r_gad56b68d6f5c9d91d554b178a91decb83"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_mult_number_1)</td></tr>
+<tr class="memdesc:gad56b68d6f5c9d91d554b178a91decb83"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного умножения матрицы на число. <br /></td></tr>
+<tr class="memitem:ga1e1bd8fb2d6bb0aba54114acb0ffdc6a" id="r_ga1e1bd8fb2d6bb0aba54114acb0ffdc6a"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_mult_matrix_1)</td></tr>
+<tr class="memdesc:ga1e1bd8fb2d6bb0aba54114acb0ffdc6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного умножения двух совместимых матриц. <br /></td></tr>
+<tr class="memitem:ga4a8853be0f5d3d18553a3b15eb47ffd9" id="r_ga4a8853be0f5d3d18553a3b15eb47ffd9"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_mult_matrix_fail)</td></tr>
+<tr class="memdesc:ga4a8853be0f5d3d18553a3b15eb47ffd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ошибки умножения двух несовместимых матриц. <br /></td></tr>
+<tr class="memitem:ga712612c2fbbfb668ff089bc55ffe059d" id="r_ga712612c2fbbfb668ff089bc55ffe059d"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_transpose_1)</td></tr>
+<tr class="memdesc:ga712612c2fbbfb668ff089bc55ffe059d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного транспонирования матрицы. <br /></td></tr>
+<tr class="memitem:ga9930b15454a568a00deaede8e4508dd4" id="r_ga9930b15454a568a00deaede8e4508dd4"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_determinant_1)</td></tr>
+<tr class="memdesc:ga9930b15454a568a00deaede8e4508dd4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка вычисления определителя для матрицы с нулевым определителем. <br /></td></tr>
+<tr class="memitem:gab809790279b8eea5d5519fa914bdbf02" id="r_gab809790279b8eea5d5519fa914bdbf02"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_determinant_2)</td></tr>
+<tr class="memdesc:gab809790279b8eea5d5519fa914bdbf02"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка вычисления определителя для матрицы 2x2. <br /></td></tr>
+<tr class="memitem:ga244c0c28bb0c73265b1978bb042c265a" id="r_ga244c0c28bb0c73265b1978bb042c265a"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_determinant_fail)</td></tr>
+<tr class="memdesc:ga244c0c28bb0c73265b1978bb042c265a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ошибки вычисления определителя для неквадратной матрицы. <br /></td></tr>
+<tr class="memitem:ga6a4345b2f398a35347dce29c7a2fc196" id="r_ga6a4345b2f398a35347dce29c7a2fc196"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_complements_1)</td></tr>
+<tr class="memdesc:ga6a4345b2f398a35347dce29c7a2fc196"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного вычисления матрицы алгебраических дополнений. <br /></td></tr>
+<tr class="memitem:ga64dd27616e469f0adb0203f22b3ba400" id="r_ga64dd27616e469f0adb0203f22b3ba400"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_complements_fail)</td></tr>
+<tr class="memdesc:ga64dd27616e469f0adb0203f22b3ba400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ошибки вычисления дополнений для неквадратной матрицы. <br /></td></tr>
+<tr class="memitem:gacaa95eb0298ad8ce3b31e8e9f9c36891" id="r_gacaa95eb0298ad8ce3b31e8e9f9c36891"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_inverse_1)</td></tr>
+<tr class="memdesc:gacaa95eb0298ad8ce3b31e8e9f9c36891"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка успешного нахождения обратной матрицы. <br /></td></tr>
+<tr class="memitem:ga7affc7d4587a65c19f76e3a825fd2671" id="r_ga7affc7d4587a65c19f76e3a825fd2671"><td class="memItemLeft" align="right" valign="top">
+END_TEST&#160;</td><td class="memItemRight" valign="bottom"><b>START_TEST</b> (test_inverse_fail_det_zero)</td></tr>
+<tr class="memdesc:ga7affc7d4587a65c19f76e3a825fd2671"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверка ошибки нахождения обратной матрицы для вырожденной матрицы (определитель 0). <br /></td></tr>
+<tr class="memitem:a77675d734cd98f00f957a31bd8a3d86b" id="r_a77675d734cd98f00f957a31bd8a3d86b"><td class="memItemLeft" align="right" valign="top">END_TEST Suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a77675d734cd98f00f957a31bd8a3d86b">s21_matrix_suite</a> (void)</td></tr>
+<tr class="memdesc:a77675d734cd98f00f957a31bd8a3d86b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создает и конфигурирует тестовый набор (Suite).  <br /></td></tr>
+</table>
+<a name="details" id="details"></a><h2 id="header-details" class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Юнит-тесты для библиотеки s21_matrix. </p>
+<dl class="section author"><dt>Автор</dt><dd>Johan Kamiyama (a.k.a @kuretaru or shanaecl)</dd></dl>
+<p>Используется фреймворк Check для организации и запуска тестов. Тесты сгруппированы по тестируемым функциям. </p><dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>2025-06-30 </dd></dl>
+</div><a name="doc-func-members" id="doc-func-members"></a><h2 id="header-doc-func-members" class="groupheader">Функции</h2>
+<a id="a77675d734cd98f00f957a31bd8a3d86b" name="a77675d734cd98f00f957a31bd8a3d86b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77675d734cd98f00f957a31bd8a3d86b">&#9670;&#160;</a></span>s21_matrix_suite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST Suite * s21_matrix_suite </td>
+          <td>(</td>
+          <td class="paramtype">void</td>          <td class="paramname"><span class="paramname"><em></em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Создает и конфигурирует тестовый набор (Suite). </p>
+<p>Объединяет все тестовые случаи (TCase), сгруппированные по функциональности (основная, обработка ошибок), в один набор для последующего запуска через SRunner. </p><dl class="section return"><dt>Возвращает</dt><dd>Указатель на созданный Suite. </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<div id="page-nav" class="page-nav-panel">
+<div id="page-nav-resize-handle"></div>
+<div id="page-nav-tree">
+<div id="page-nav-contents">
+</div><!-- page-nav-contents -->
+</div><!-- page-nav-tree -->
+</div><!-- page-nav -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li><li class="navelem"><a href="s21__matrix__test_8c.html">s21_matrix_test.c</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

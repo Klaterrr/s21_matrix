@@ -1,0 +1,7 @@
+<map id="src/s21_matrix.h" name="src/s21_matrix.h">
+<area shape="rect" id="Node000001" title="Заголовочный файл для библиотеки работы с матрицами." alt="" coords="81,5,200,32"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html" title="Файл с реализацией функций библиотеки s21_matrix." alt="" coords="5,88,124,115"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,45,78,90,74,86,116,41"/>
+<area shape="rect" id="Node000003" href="$s21__matrix__test_8c.html" title="Юнит&#45;тесты для библиотеки s21_matrix." alt="" coords="148,80,288,123"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,42,200,78,196,82,161,45"/>
+</map>

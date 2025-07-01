@@ -1,0 +1,17 @@
+<map id="populate_complements_matrix" name="populate_complements_matrix">
+<area shape="rect" id="Node000001" title="Заполняет матрицу алгебраическими дополнениями." alt="" coords="778,73,933,116"/>
+<area shape="rect" id="Node000002" href="$group__matrix__algebra.html#gab1e3ac9001c0a4e67e876f90d60d23e1" title="Вычисляет матрицу алгебраических дополнений." alt="" coords="571,81,730,108"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="762,97,730,97,730,92,762,92"/>
+<area shape="rect" id="Node000003" href="$s21__matrix_8c.html#a96a189c4d33a3082ff66f8e0ca67531d" title="Выполняет основную последовательность вычислений для нахождения обратной матрицы." alt="" coords="340,31,523,57"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="574,80,492,61,493,55,576,75"/>
+<area shape="rect" id="Node000007" href="$group__test__algebra.html#ga6a4345b2f398a35347dce29c7a2fc196" title="Проверка успешного вычисления матрицы алгебраических дополнений." alt="" coords="380,81,484,108"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="556,97,484,97,484,92,556,92"/>
+<area shape="rect" id="Node000008" href="$group__test__algebra.html#ga64dd27616e469f0adb0203f22b3ba400" title="Проверка ошибки вычисления дополнений для неквадратной матрицы." alt="" coords="380,132,484,159"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="575,115,485,136,484,131,574,110"/>
+<area shape="rect" id="Node000004" href="$group__matrix__algebra.html#gacf36c0578df2e0b3a9e63fc8ad3b3276" title="Находит обратную матрицу." alt="" coords="158,31,292,57"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="325,47,292,47,292,41,325,41"/>
+<area shape="rect" id="Node000005" href="$group__test__algebra.html#gacaa95eb0298ad8ce3b31e8e9f9c36891" title="Проверка успешного нахождения обратной матрицы." alt="" coords="5,5,110,32"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="142,34,110,29,111,24,143,29"/>
+<area shape="rect" id="Node000006" href="$group__test__algebra.html#ga7affc7d4587a65c19f76e3a825fd2671" title="Проверка ошибки нахождения обратной матрицы для вырожденной матрицы (определитель 0)." alt="" coords="5,56,110,83"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="143,59,111,64,110,59,142,54"/>
+</map>

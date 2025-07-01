@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.14.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>s21_matrix Library: Исходный файл src/s21_matrix.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">s21_matrix Library<span id="projectnumber">&#160;1.0</span>
+   </div>
+   <div id="projectbrief">Библиотека для работы с матрицами на языке C</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.14.0 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+</script>
+<script type="text/javascript">
+$(function() { codefold.init(); });
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Поиск',true);
+  $(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+$(function(){initNavTree('s21__matrix_8h_source.html','',''); });
+</script>
+<div id="container">
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">s21_matrix.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="s21__matrix_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef S21_MATRIX_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define S21_MATRIX_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;math.h&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;stdio.h&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stdlib.h&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;stddef.h&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// --- Макросы и перечисления ---</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span> </div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#define SUCCESS 1</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#define FAILURE 0</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#define S21_EPS 1e-7</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span></div>
+<div class="foldopen" id="foldopen00030" data-start="{" data-end="};">
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structmatrix__struct.html">   30</a></span><span class="keyword">typedef</span> <span class="keyword">struct </span><a class="code hl_struct" href="structmatrix__struct.html">matrix_struct</a> {</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno"><a class="line" href="structmatrix__struct.html#aae4109605ff69a4afc61a92f7b374a2f">   31</a></span>  <span class="keywordtype">double</span> **<a class="code hl_variable" href="structmatrix__struct.html#aae4109605ff69a4afc61a92f7b374a2f">matrix</a>; </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="structmatrix__struct.html#a1161ae2ab4d3b3207619bee96ef97f92">   32</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structmatrix__struct.html#a1161ae2ab4d3b3207619bee96ef97f92">rows</a>;        </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="structmatrix__struct.html#ada0243b85145d2029d0814485bc389f7">   33</a></span>  <span class="keywordtype">int</span> <a class="code hl_variable" href="structmatrix__struct.html#ada0243b85145d2029d0814485bc389f7">columns</a>;     </div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno"><a class="line" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">   34</a></span>} <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a>;</div>
+</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span></div>
+<div class="foldopen" id="foldopen00039" data-start="{" data-end="};">
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0">   39</a></span><span class="keyword">typedef</span> <span class="keyword">enum</span> {</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59">   40</a></span>  <a class="code hl_enumvalue" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a> = 0,                </div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno"><a class="line" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c">   41</a></span>  <a class="code hl_enumvalue" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c">INCORRECT_MATRIX</a> = 1,  </div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno"><a class="line" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584">   42</a></span>  <a class="code hl_enumvalue" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584">CALCULATION_ERROR</a> = 2, </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>} <a class="code hl_enumeration" href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0">result_code_t</a>;</div>
+</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="comment">// =================================================================================</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="comment">// Группировка функций для удобной навигации в Doxygen</span></div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="comment">// =================================================================================</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span></div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span></div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="comment">// --- Основные функции API ---</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span></div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4">s21_create_matrix</a>(<span class="keywordtype">int</span> rows, <span class="keywordtype">int</span> columns, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span><span class="keywordtype">void</span> <a class="code hl_function" href="group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140">s21_remove_matrix</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span></div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__core.html#ga63bcd0d51a932d940a62b7356b69bfe7">s21_eq_matrix</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *B);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span></div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__arithmetic.html#gaaa350889d1c45b3b8bb269f9c37e94e7">s21_sum_matrix</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *B, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span></div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__arithmetic.html#ga1942072e4680db31e2854b071b00c3fc">s21_sub_matrix</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *B, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span></div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__arithmetic.html#gacd185705783880e5cc7c233329b9d7ef">s21_mult_number</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <span class="keywordtype">double</span> number, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span></div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__arithmetic.html#ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3">s21_mult_matrix</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *B, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span></div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__algebra.html#ga4a5bbe0e14296f6ec7a91e57ac202ed2">s21_transpose</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span></div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__algebra.html#gad1aa328504824fe335a97917c33e41b6">s21_determinant</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <span class="keywordtype">double</span> *result);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span></div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__algebra.html#gab1e3ac9001c0a4e67e876f90d60d23e1">s21_calc_complements</a>(<span class="keyword">const</span> <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span><span class="keywordtype">int</span> <a class="code hl_function" href="group__matrix__algebra.html#gacf36c0578df2e0b3a9e63fc8ad3b3276">s21_inverse_matrix</a>(<a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *A, <a class="code hl_typedef" href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a> *result);</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span><span class="preprocessor">#endif  </span><span class="comment">// S21_MATRIX_H_</span></div>
+<div class="ttc" id="agroup__matrix__algebra_html_ga4a5bbe0e14296f6ec7a91e57ac202ed2"><div class="ttname"><a href="group__matrix__algebra.html#ga4a5bbe0e14296f6ec7a91e57ac202ed2">s21_transpose</a></div><div class="ttdeci">int s21_transpose(matrix_t *A, matrix_t *result)</div><div class="ttdoc">Транспонирует матрицу.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:351</div></div>
+<div class="ttc" id="agroup__matrix__algebra_html_gab1e3ac9001c0a4e67e876f90d60d23e1"><div class="ttname"><a href="group__matrix__algebra.html#gab1e3ac9001c0a4e67e876f90d60d23e1">s21_calc_complements</a></div><div class="ttdeci">int s21_calc_complements(const matrix_t *A, matrix_t *result)</div><div class="ttdoc">Вычисляет матрицу алгебраических дополнений.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:400</div></div>
+<div class="ttc" id="agroup__matrix__algebra_html_gacf36c0578df2e0b3a9e63fc8ad3b3276"><div class="ttname"><a href="group__matrix__algebra.html#gacf36c0578df2e0b3a9e63fc8ad3b3276">s21_inverse_matrix</a></div><div class="ttdeci">int s21_inverse_matrix(matrix_t *A, matrix_t *result)</div><div class="ttdoc">Находит обратную матрицу.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:421</div></div>
+<div class="ttc" id="agroup__matrix__algebra_html_gad1aa328504824fe335a97917c33e41b6"><div class="ttname"><a href="group__matrix__algebra.html#gad1aa328504824fe335a97917c33e41b6">s21_determinant</a></div><div class="ttdeci">int s21_determinant(matrix_t *A, double *result)</div><div class="ttdoc">Вычисляет определитель матрицы.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:370</div></div>
+<div class="ttc" id="agroup__matrix__arithmetic_html_ga1942072e4680db31e2854b071b00c3fc"><div class="ttname"><a href="group__matrix__arithmetic.html#ga1942072e4680db31e2854b071b00c3fc">s21_sub_matrix</a></div><div class="ttdeci">int s21_sub_matrix(matrix_t *A, matrix_t *B, matrix_t *result)</div><div class="ttdoc">Вычитает одну матрицу из другой.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:290</div></div>
+<div class="ttc" id="agroup__matrix__arithmetic_html_ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3"><div class="ttname"><a href="group__matrix__arithmetic.html#ga9c2c1fd5d9c5e189f0fb2851fd2a1ee3">s21_mult_matrix</a></div><div class="ttdeci">int s21_mult_matrix(matrix_t *A, matrix_t *B, matrix_t *result)</div><div class="ttdoc">Умножает две матрицы.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:328</div></div>
+<div class="ttc" id="agroup__matrix__arithmetic_html_gaaa350889d1c45b3b8bb269f9c37e94e7"><div class="ttname"><a href="group__matrix__arithmetic.html#gaaa350889d1c45b3b8bb269f9c37e94e7">s21_sum_matrix</a></div><div class="ttdeci">int s21_sum_matrix(matrix_t *A, matrix_t *B, matrix_t *result)</div><div class="ttdoc">Складывает две матрицы.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:270</div></div>
+<div class="ttc" id="agroup__matrix__arithmetic_html_gacd185705783880e5cc7c233329b9d7ef"><div class="ttname"><a href="group__matrix__arithmetic.html#gacd185705783880e5cc7c233329b9d7ef">s21_mult_number</a></div><div class="ttdeci">int s21_mult_number(matrix_t *A, double number, matrix_t *result)</div><div class="ttdoc">Умножает матрицу на скалярное значение.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:310</div></div>
+<div class="ttc" id="agroup__matrix__core_html_ga59fdb6ff4aeb96dc381c8f8986af2bd4"><div class="ttname"><a href="group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4">s21_create_matrix</a></div><div class="ttdeci">int s21_create_matrix(int rows, int columns, matrix_t *result)</div><div class="ttdoc">Создает матрицу заданного размера.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:208</div></div>
+<div class="ttc" id="agroup__matrix__core_html_ga63bcd0d51a932d940a62b7356b69bfe7"><div class="ttname"><a href="group__matrix__core.html#ga63bcd0d51a932d940a62b7356b69bfe7">s21_eq_matrix</a></div><div class="ttdeci">int s21_eq_matrix(matrix_t *A, matrix_t *B)</div><div class="ttdoc">Сравнивает две матрицы на идентичность с точностью до S21_EPS.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:245</div></div>
+<div class="ttc" id="agroup__matrix__core_html_gaad8337ad12e6dae5bdbbaf1d3b35e140"><div class="ttname"><a href="group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140">s21_remove_matrix</a></div><div class="ttdeci">void s21_remove_matrix(matrix_t *A)</div><div class="ttdoc">Освобождает память, выделенную под матрицу.</div><div class="ttdef"><b>Определения</b> s21_matrix.c:233</div></div>
+<div class="ttc" id="as21__matrix_8h_html_a6121abdcc0c0f5e9a8c42390d3274fdd"><div class="ttname"><a href="s21__matrix_8h.html#a6121abdcc0c0f5e9a8c42390d3274fdd">matrix_t</a></div><div class="ttdeci">struct matrix_struct matrix_t</div><div class="ttdoc">Структура для представления матрицы.</div></div>
+<div class="ttc" id="as21__matrix_8h_html_acb67c5c5b7c3c60bb8563e0cc400b6d0"><div class="ttname"><a href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0">result_code_t</a></div><div class="ttdeci">result_code_t</div><div class="ttdoc">Перечисление кодов возврата для функций библиотеки.</div><div class="ttdef"><b>Определения</b> s21_matrix.h:39</div></div>
+<div class="ttc" id="as21__matrix_8h_html_acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59"><div class="ttname"><a href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0a2bc49ec37d6a5715dd23e85f1ff5bb59">OK</a></div><div class="ttdeci">@ OK</div><div class="ttdef"><b>Определения</b> s21_matrix.h:40</div></div>
+<div class="ttc" id="as21__matrix_8h_html_acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c"><div class="ttname"><a href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0a95e17de6753200c8a418b2cc7e75647c">INCORRECT_MATRIX</a></div><div class="ttdeci">@ INCORRECT_MATRIX</div><div class="ttdef"><b>Определения</b> s21_matrix.h:41</div></div>
+<div class="ttc" id="as21__matrix_8h_html_acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584"><div class="ttname"><a href="s21__matrix_8h.html#acb67c5c5b7c3c60bb8563e0cc400b6d0ab3303e95e5f7ad32bd5cf39b3fa94584">CALCULATION_ERROR</a></div><div class="ttdeci">@ CALCULATION_ERROR</div><div class="ttdef"><b>Определения</b> s21_matrix.h:42</div></div>
+<div class="ttc" id="astructmatrix__struct_html"><div class="ttname"><a href="structmatrix__struct.html">matrix_struct</a></div><div class="ttdoc">Структура для представления матрицы.</div><div class="ttdef"><b>Определения</b> s21_matrix.h:30</div></div>
+<div class="ttc" id="astructmatrix__struct_html_a1161ae2ab4d3b3207619bee96ef97f92"><div class="ttname"><a href="structmatrix__struct.html#a1161ae2ab4d3b3207619bee96ef97f92">matrix_struct::rows</a></div><div class="ttdeci">int rows</div><div class="ttdef"><b>Определения</b> s21_matrix.h:32</div></div>
+<div class="ttc" id="astructmatrix__struct_html_aae4109605ff69a4afc61a92f7b374a2f"><div class="ttname"><a href="structmatrix__struct.html#aae4109605ff69a4afc61a92f7b374a2f">matrix_struct::matrix</a></div><div class="ttdeci">double ** matrix</div><div class="ttdef"><b>Определения</b> s21_matrix.h:31</div></div>
+<div class="ttc" id="astructmatrix__struct_html_ada0243b85145d2029d0814485bc389f7"><div class="ttname"><a href="structmatrix__struct.html#ada0243b85145d2029d0814485bc389f7">matrix_struct::columns</a></div><div class="ttdeci">int columns</div><div class="ttdef"><b>Определения</b> s21_matrix.h:33</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+</div><!-- container -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a href="s21__matrix_8h.html">s21_matrix.h</a></li>
+    <li class="footer">Создано системой <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.14.0 </li>
+  </ul>
+</div>
+</body>
+</html>

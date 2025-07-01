@@ -1,0 +1,25 @@
+var s21__matrix__test_8c =
+[
+    [ "s21_matrix_suite", "s21__matrix__test_8c.html#a77675d734cd98f00f957a31bd8a3d86b", null ],
+    [ "START_TEST", "group__test__algebra.html#ga6a4345b2f398a35347dce29c7a2fc196", null ],
+    [ "START_TEST", "group__test__algebra.html#ga64dd27616e469f0adb0203f22b3ba400", null ],
+    [ "START_TEST", "group__test__create.html#ga461920efadcd08fa06c5b1c8f6ceab97", null ],
+    [ "START_TEST", "group__test__create.html#ga2d73ee9313e06a760f15d562c7ae7e88", null ],
+    [ "START_TEST", "group__test__create.html#gac18a3d69367e43ebac8337ca0c5021c5", null ],
+    [ "START_TEST", "group__test__algebra.html#ga9930b15454a568a00deaede8e4508dd4", null ],
+    [ "START_TEST", "group__test__algebra.html#gab809790279b8eea5d5519fa914bdbf02", null ],
+    [ "START_TEST", "group__test__algebra.html#ga244c0c28bb0c73265b1978bb042c265a", null ],
+    [ "START_TEST", "group__test__eq.html#gabd1295f4c93b55ca9d2ab0d681c02dca", null ],
+    [ "START_TEST", "group__test__eq.html#ga720f3aae3f5c7d21885178d84824e734", null ],
+    [ "START_TEST", "group__test__eq.html#gac581d0bfbced93258a253713b234ce9b", null ],
+    [ "START_TEST", "group__test__eq.html#gab960552203f46d106eab78405391802a", null ],
+    [ "START_TEST", "group__test__algebra.html#gacaa95eb0298ad8ce3b31e8e9f9c36891", null ],
+    [ "START_TEST", "group__test__algebra.html#ga7affc7d4587a65c19f76e3a825fd2671", null ],
+    [ "START_TEST", "group__test__mult.html#ga1e1bd8fb2d6bb0aba54114acb0ffdc6a", null ],
+    [ "START_TEST", "group__test__mult.html#ga4a8853be0f5d3d18553a3b15eb47ffd9", null ],
+    [ "START_TEST", "group__test__mult.html#gad56b68d6f5c9d91d554b178a91decb83", null ],
+    [ "START_TEST", "group__test__sum__sub.html#gaa1d3fd550be47b9d6d49e5a8db5c8242", null ],
+    [ "START_TEST", "group__test__sum__sub.html#gae05c542b3d9f1a8dba5f04f020f0cea4", null ],
+    [ "START_TEST", "group__test__sum__sub.html#ga31fc0a16da9934801764380f93eaad6e", null ],
+    [ "START_TEST", "group__test__transform.html#ga712612c2fbbfb668ff089bc55ffe059d", null ]
+];

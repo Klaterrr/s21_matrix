@@ -1,0 +1,20 @@
+<map id="populate_complements_matrix" name="populate_complements_matrix">
+<area shape="rect" id="Node000001" title="Заполняет матрицу алгебраическими дополнениями." alt="" coords="5,43,161,85"/>
+<area shape="rect" id="Node000002" href="$s21__matrix_8c.html#ad0f646f72453f127ab099735d14377c0" title="Создает минорную матрицу, исключая заданную строку и столбец." alt="" coords="378,25,499,52"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="161,56,362,41,362,47,161,61"/>
+<area shape="rect" id="Node000003" href="$group__matrix__core.html#ga59fdb6ff4aeb96dc381c8f8986af2bd4" title="Создает матрицу заданного размера." alt="" coords="374,76,502,103"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,67,359,81,358,86,161,72"/>
+<area shape="rect" id="Node000005" href="$group__matrix__core.html#gaad8337ad12e6dae5bdbbaf1d3b35e140" title="Освобождает память, выделенную под матрицу." alt="" coords="743,76,878,103"/>
+<area shape="poly" id="edge11_Node000001_Node000005" title=" " alt="" coords="160,40,208,29,290,14,355,5,420,4,503,11,571,22,638,36,753,68,752,73,637,42,570,27,502,16,420,9,355,10,291,19,209,35,161,45"/>
+<area shape="rect" id="Node000006" href="$group__matrix__algebra.html#gad1aa328504824fe335a97917c33e41b6" title="Вычисляет определитель матрицы." alt="" coords="209,151,326,177"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="125,84,229,140,226,145,123,88"/>
+<area shape="rect" id="Node000004" href="$s21__matrix_8c.html#ae01bee57f55876771f6d1c7f74d43854" title="Выделяет память под строки матрицы и инициализирует их нулями." alt="" coords="550,76,695,103"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="503,87,535,87,535,92,503,92"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="695,87,727,87,727,92,695,92"/>
+<area shape="poly" id="edge6_Node000006_Node000002" title=" " alt="" coords="278,148,317,107,372,62,381,57,384,61,376,66,321,111,282,152"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="296,148,373,112,387,106,389,111,375,117,298,153"/>
+<area shape="poly" id="edge10_Node000006_Node000005" title=" " alt="" coords="327,162,374,163,438,165,502,163,570,152,637,137,752,105,753,110,638,142,571,157,503,168,438,171,374,168,327,167"/>
+<area shape="poly" id="edge9_Node000006_Node000006" title=" " alt="" coords="238,151,233,142,236,132,248,126,267,124,288,127,299,133,296,138,286,132,267,129,250,131,240,136,238,141,243,149"/>
+<area shape="rect" id="Node000007" href="$s21__matrix_8c.html#a8607e5041297f423db89ce899f0af7e0" title="Проверяет, является ли матрица корректной." alt="" coords="384,127,492,153"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="326,153,368,147,369,152,327,158"/>
+</map>
